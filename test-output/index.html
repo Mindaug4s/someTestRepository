@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-RegressionTest_-_Suite">
+              <span class="suite-name border-failed">RegressionTest - Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-RegressionTest_-_Suite">
+                    <span>C:\Users\Mindaug4s\workspace\VotingSystem\src\test\java\tests\regressionTest.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-RegressionTest_-_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-RegressionTest_-_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-RegressionTest_-_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-RegressionTest_-_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-RegressionTest_-_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-RegressionTest_-_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">41 methods, 2 failed,  39 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RegressionTest_-_Suite" class="hide-methods failed suite-RegressionTest_-_Suite"> (hide)</a> <!-- hide-methods failed suite-RegressionTest_-_Suite -->
+                      <a href="#" panel-name="suite-RegressionTest_-_Suite" class="show-methods failed suite-RegressionTest_-_Suite"> (show)</a> <!-- show-methods failed suite-RegressionTest_-_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-RegressionTest_-_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.homepage.TestIfHomePageHasMainComponents" hash-for-method="testIfLoginButtonAvailble">testIfLoginButtonAvailble</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.homepage.TestIfHomePageHasMainComponents" hash-for-method="testIfWebPageTitleHeaderIsAvailable">testIfWebPageTitleHeaderIsAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-RegressionTest_-_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-RegressionTest_-_Suite" class="hide-methods skipped suite-RegressionTest_-_Suite"> (hide)</a> <!-- hide-methods skipped suite-RegressionTest_-_Suite -->
+                      <a href="#" panel-name="suite-RegressionTest_-_Suite" class="show-methods skipped suite-RegressionTest_-_Suite"> (show)</a> <!-- show-methods skipped suite-RegressionTest_-_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-RegressionTest_-_Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted" hash-for-method="prepareTheDistrict">prepareTheDistrict</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted" hash-for-method="prepareTheDistrictAndCounty">prepareTheDistrictAndCounty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted" hash-for-method="removeTheDistrict">removeTheDistrict</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted" hash-for-method="removeTheDistrict">removeTheDistrict</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem" hash-for-method="testIfAdministratorCanRejectVotingResults">testIfAdministratorCanRejectVotingResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.homepage.TestIfHomePageHasMainComponents" hash-for-method="testIfCandidateSearchMenuElementAvailble">testIfCandidateSearchMenuElementAvailble</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted" hash-for-method="testIfCandidatesCanBeDeletedFromTheParty">testIfCandidatesCanBeDeletedFromTheParty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted" hash-for-method="testIfCandidatsCanBeRemovedFromTheDistrict">testIfCandidatsCanBeRemovedFromTheDistrict</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.TestIfAdministratorPageHasMainComponents" hash-for-method="testIfCountyRepresentativesMenuElementIsAvailable">testIfCountyRepresentativesMenuElementIsAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.TestIfAdministratorPageHasMainComponents" hash-for-method="testIfCountyResultsMenuElementIsAvailable">testIfCountyResultsMenuElementIsAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.districts.TestDistrictAndCountyCreation" hash-for-method="testIfDistrictAndCountyCanBeCreatedWithInvalidData(KaþkurLietuvoj, qwerty, 9999, senamiestis g.)">testIfDistrictAndCountyCanBeCreatedWithInvalidData(KaþkurLietuvoj, qwerty, 9999, senamiestis g.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.districts.TestDistrictAndCountyCreation" hash-for-method="testIfDistrictAndCountyCanBeCreatedWithInvalidData(TestDistrict, someLatinWQX, 299999, naujamiestis g.)">testIfDistrictAndCountyCanBeCreatedWithInvalidData(TestDistrict, someLatinWQX, 299999, naujamiestis g.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.districts.TestDistrictAndCountyCreation" hash-for-method="testIfDistrictAndCountyCanBeCreatedWithValidData(TestDistrict, testerCounty, 2999, Þirmûnø gatvë)">testIfDistrictAndCountyCanBeCreatedWithValidData(TestDistrict, testerCounty, 2999, Þirmûnø gatvë)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.districts.TestDistrictAndCountyCreation" hash-for-method="testIfDistrictAndCountyCanBeCreatedWithValidData(KaþkurLietuvoj, KaþkurVilniuj, 9999, Antakalnio gatvë)">testIfDistrictAndCountyCanBeCreatedWithValidData(KaþkurLietuvoj, KaþkurVilniuj, 9999, Antakalnio gatvë)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.districts.TestDistrictAndCountyCreation" hash-for-method="testIfDistrictAndCountyCanBeCreatedWithdNullData">testIfDistrictAndCountyCanBeCreatedWithdNullData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted" hash-for-method="testIfDistrictCandidatesCanBeAddedToSpecificDistrict(testName, testSurname, 38706092222, testParty, Ilgas ilgas kandidato aprasymas beveik kaip pasaka ti...)">testIfDistrictCandidatesCanBeAddedToSpecificDistrict(testName, testSurname, 38706092222, testParty, Ilgas ilgas kandidato aprasymas beveik kaip pasaka ti...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted" hash-for-method="testIfDistrictCandidatesCanBeAddedToSpecificDistrict(1, testingName, testingSurname, 38706093333, &quot;Ilgas ilgas kandidato aprasymas beveik kaip pasaka tik...)">testIfDistrictCandidatesCanBeAddedToSpecificDistrict(1, testingName, testingSurname, 38706093333, "Ilgas ilgas kandidato aprasymas beveik kaip pasaka tik...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.TestIfAdministratorPageHasMainComponents" hash-for-method="testIfDistrictCandidatesMenuElementIsAvailable">testIfDistrictCandidatesMenuElementIsAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.TestIfAdministratorPageHasMainComponents" hash-for-method="testIfDistrictsMenuElementIsAvailable">testIfDistrictsMenuElementIsAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.votingResults.TestIfCandidateSearchIsAvailable" hash-for-method="testIfMainCandidateSearchComponentsAreAvailable">testIfMainCandidateSearchComponentsAreAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.countyResults.TestCountyResultsPageIsAvailable" hash-for-method="testIfMainElementsAreAvailable">testIfMainElementsAreAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.homepage.TestIfHomePageHasMainComponents" hash-for-method="testIfMultiMandateResultsMenuElementAvailble">testIfMultiMandateResultsMenuElementAvailble</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem" hash-for-method="testIfMultiMandateVotingResultsCanBeUploaded(100, 200)">testIfMultiMandateVotingResultsCanBeUploaded(100, 200)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.representative.TestIfRepresentativePageHasMainComponents" hash-for-method="testIfMultisMandateVotingResultsWebpartIsAvailable">testIfMultisMandateVotingResultsWebpartIsAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.TestIfAdministratorPageHasMainComponents" hash-for-method="testIfPartiesMenuElementIsAvailable">testIfPartiesMenuElementIsAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted" hash-for-method="testIfPartyCanBeCreatedWithNullParameters">testIfPartyCanBeCreatedWithNullParameters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted" hash-for-method="testIfPartyCanBeDeletedFromTheDistrict">testIfPartyCanBeDeletedFromTheDistrict</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted" hash-for-method="testIfRepresentativeCanBeCreatedAndDeleted(Testperson, Testsurname, testing@test.itak)">testIfRepresentativeCanBeCreatedAndDeleted(Testperson, Testsurname, testing@test.itak)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted" hash-for-method="testIfRepresentativeCanNotBeCreatedWithNullParameters">testIfRepresentativeCanNotBeCreatedWithNullParameters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.districts.TestDistrictCreation" hash-for-method="testIfSingleDistrictCanBeCreatedWithInvalidData(District with latin symbol x)">testIfSingleDistrictCanBeCreatedWithInvalidData(District with latin symbol x)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.districts.TestDistrictCreation" hash-for-method="testIfSingleDistrictCanBeCreatedWithInvalidData(More latin symbols qwz)">testIfSingleDistrictCanBeCreatedWithInvalidData(More latin symbols qwz)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.districts.TestDistrictCreation" hash-for-method="testIfSingleDistrictCanBeCreatedWithNullData">testIfSingleDistrictCanBeCreatedWithNullData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.districts.TestDistrictCreation" hash-for-method="testIfSingleDistrictCanBeCreatedWithValidData(District contains Lithuanian symbols ðà)">testIfSingleDistrictCanBeCreatedWithValidData(District contains Lithuanian symbols ðà)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.districts.TestEditFunction" hash-for-method="testIfSingleDistrictCanBeCreatedWithValidData(TestDistrict, testCounty, 299, naujamiestis g., Kaþkur, Lietuvoj, 700, senamiestis g.)">testIfSingleDistrictCanBeCreatedWithValidData(TestDistrict, testCounty, 299, naujamiestis g., Kaþkur, Lietuvoj, 700, senamiestis g.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.administration.districts.TestDistrictCreation" hash-for-method="testIfSingleDistrictCanBeCreatedWithValidData(Testing District)">testIfSingleDistrictCanBeCreatedWithValidData(Testing District)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.homepage.TestIfHomePageHasMainComponents" hash-for-method="testIfSingleMandateResultsMenuElementAvailble">testIfSingleMandateResultsMenuElementAvailble</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem" hash-for-method="testIfSingleMandateVotingResultsCanBeUploaded(100, 200)">testIfSingleMandateVotingResultsCanBeUploaded(100, 200)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.representative.TestIfRepresentativePageHasMainComponents" hash-for-method="testIfSingleMandateVotingResultsWebpartIsAvailable">testIfSingleMandateVotingResultsWebpartIsAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionTest_-_Suite" title="tests.homepage.TestIfHomePageHasMainComponents" hash-for-method="testIfSummarizedResultsMenuElementAvailble">testIfSummarizedResultsMenuElementAvailble</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-RegressionTest_-_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-RegressionTest_-_Suite" class="panel RegressionTest_-_Suite">
+          <div class="suite-RegressionTest_-_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.homepage.TestIfHomePageHasMainComponents</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfLoginButtonAvailble">
+                  </a> <!-- testIfLoginButtonAvailble -->
+                  <span class="method-name">testIfLoginButtonAvailble</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 75235d3b-757f-4f6c-b3eb-60c5619c49d2
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at tests.homepage.TestIfHomePageHasMainComponents.testIfLoginButtonAvailble(TestIfHomePageHasMainComponents.java:28)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:162)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 32 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 47 more
+... Removed 24 stack frames<br/> org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 75235d3b-757f-4f6c-b3eb-60c5619c49d2
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at tests.homepage.TestIfHomePageHasMainComponents.testIfLoginButtonAvailble(TestIfHomePageHasMainComponents.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:162)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 32 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 47 more
+"</b><br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br>org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br>org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br>org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)<br>org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br>com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)<br>tests.homepage.TestIfHomePageHasMainComponents.testIfLoginButtonAvailble(TestIfHomePageHasMainComponents.java:28)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfWebPageTitleHeaderIsAvailable">
+                  </a> <!-- testIfWebPageTitleHeaderIsAvailable -->
+                  <span class="method-name">testIfWebPageTitleHeaderIsAvailable</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;website-page-title&quot;}
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d289ae25-348d-454a-88c4-bd68e3c355b9
+*** Element info: {Using=id, value=website-page-title}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at tests.homepage.TestIfHomePageHasMainComponents.testIfWebPageTitleHeaderIsAvailable(TestIfHomePageHasMainComponents.java:18)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;website-page-title&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/MINDAU~1/AppData/Local/Temp/anonymous1753031544479347351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/MINDAU~1/AppData/Local/Temp/anonymous1753031544479347351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 28 stack frames<br/> org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;website-page-title&quot;}
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d289ae25-348d-454a-88c4-bd68e3c355b9
+*** Element info: {Using=id, value=website-page-title}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at tests.homepage.TestIfHomePageHasMainComponents.testIfWebPageTitleHeaderIsAvailable(TestIfHomePageHasMainComponents.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;website-page-title&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/MINDAU~1/AppData/Local/Temp/anonymous1753031544479347351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/MINDAU~1/AppData/Local/Temp/anonymous1753031544479347351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+"</b><br>sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br>sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br>java.lang.reflect.Constructor.newInstance(Unknown Source)<br>org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br>org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br>org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)<br>org.openqa.selenium.By$ById.findElement(By.java:218)<br>org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br>org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)<br>org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br>com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)<br>tests.homepage.TestIfHomePageHasMainComponents.testIfWebPageTitleHeaderIsAvailable(TestIfHomePageHasMainComponents.java:18)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest_-_Suite-class-failed -->
+          <div class="suite-RegressionTest_-_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfCandidatesCanBeDeletedFromTheParty">
+                  </a> <!-- testIfCandidatesCanBeDeletedFromTheParty -->
+                  <span class="method-name">testIfCandidatesCanBeDeletedFromTheParty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfDistrictCandidatesCanBeAddedToSpecificDistrict(1, testingName, testingSurname, 38706093333, &quot;Ilgas ilgas kandidato aprasymas beveik kaip pasaka tik...)">
+                  </a> <!-- testIfDistrictCandidatesCanBeAddedToSpecificDistrict(1, testingName, testingSurname, 38706093333, "Ilgas ilgas kandidato aprasymas beveik kaip pasaka tik...) -->
+                  <span class="method-name">testIfDistrictCandidatesCanBeAddedToSpecificDistrict</span>
+                  <span class="parameters">(1, testingName, testingSurname, 38706093333, "Ilgas ilgas kandidato aprasymas beveik kaip pasaka tik imk ir balsouk uz toki")</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfPartyCanBeCreatedWithNullParameters">
+                  </a> <!-- testIfPartyCanBeCreatedWithNullParameters -->
+                  <span class="method-name">testIfPartyCanBeCreatedWithNullParameters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfPartyCanBeDeletedFromTheDistrict">
+                  </a> <!-- testIfPartyCanBeDeletedFromTheDistrict -->
+                  <span class="method-name">testIfPartyCanBeDeletedFromTheDistrict</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest_-_Suite-class-skipped -->
+          <div class="suite-RegressionTest_-_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="prepareTheDistrictAndCounty">
+                  </a> <!-- prepareTheDistrictAndCounty -->
+                  <span class="method-name">prepareTheDistrictAndCounty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeTheDistrict">
+                  </a> <!-- removeTheDistrict -->
+                  <span class="method-name">removeTheDistrict</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfRepresentativeCanBeCreatedAndDeleted(Testperson, Testsurname, testing@test.itak)">
+                  </a> <!-- testIfRepresentativeCanBeCreatedAndDeleted(Testperson, Testsurname, testing@test.itak) -->
+                  <span class="method-name">testIfRepresentativeCanBeCreatedAndDeleted</span>
+                  <span class="parameters">(Testperson, Testsurname, testing@test.itak)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfRepresentativeCanNotBeCreatedWithNullParameters">
+                  </a> <!-- testIfRepresentativeCanNotBeCreatedWithNullParameters -->
+                  <span class="method-name">testIfRepresentativeCanNotBeCreatedWithNullParameters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest_-_Suite-class-skipped -->
+          <div class="suite-RegressionTest_-_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.votingResults.TestIfCandidateSearchIsAvailable</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfMainCandidateSearchComponentsAreAvailable">
+                  </a> <!-- testIfMainCandidateSearchComponentsAreAvailable -->
+                  <span class="method-name">testIfMainCandidateSearchComponentsAreAvailable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest_-_Suite-class-skipped -->
+          <div class="suite-RegressionTest_-_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.homepage.TestIfHomePageHasMainComponents</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfCandidateSearchMenuElementAvailble">
+                  </a> <!-- testIfCandidateSearchMenuElementAvailble -->
+                  <span class="method-name">testIfCandidateSearchMenuElementAvailble</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfMultiMandateResultsMenuElementAvailble">
+                  </a> <!-- testIfMultiMandateResultsMenuElementAvailble -->
+                  <span class="method-name">testIfMultiMandateResultsMenuElementAvailble</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfSingleMandateResultsMenuElementAvailble">
+                  </a> <!-- testIfSingleMandateResultsMenuElementAvailble -->
+                  <span class="method-name">testIfSingleMandateResultsMenuElementAvailble</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfSummarizedResultsMenuElementAvailble">
+                  </a> <!-- testIfSummarizedResultsMenuElementAvailble -->
+                  <span class="method-name">testIfSummarizedResultsMenuElementAvailble</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest_-_Suite-class-skipped -->
+          <div class="suite-RegressionTest_-_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.administration.TestIfAdministratorPageHasMainComponents</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfCountyRepresentativesMenuElementIsAvailable">
+                  </a> <!-- testIfCountyRepresentativesMenuElementIsAvailable -->
+                  <span class="method-name">testIfCountyRepresentativesMenuElementIsAvailable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfCountyResultsMenuElementIsAvailable">
+                  </a> <!-- testIfCountyResultsMenuElementIsAvailable -->
+                  <span class="method-name">testIfCountyResultsMenuElementIsAvailable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfDistrictCandidatesMenuElementIsAvailable">
+                  </a> <!-- testIfDistrictCandidatesMenuElementIsAvailable -->
+                  <span class="method-name">testIfDistrictCandidatesMenuElementIsAvailable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfDistrictsMenuElementIsAvailable">
+                  </a> <!-- testIfDistrictsMenuElementIsAvailable -->
+                  <span class="method-name">testIfDistrictsMenuElementIsAvailable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfPartiesMenuElementIsAvailable">
+                  </a> <!-- testIfPartiesMenuElementIsAvailable -->
+                  <span class="method-name">testIfPartiesMenuElementIsAvailable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest_-_Suite-class-skipped -->
+          <div class="suite-RegressionTest_-_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.administration.countyResults.TestCountyResultsPageIsAvailable</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfMainElementsAreAvailable">
+                  </a> <!-- testIfMainElementsAreAvailable -->
+                  <span class="method-name">testIfMainElementsAreAvailable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest_-_Suite-class-skipped -->
+          <div class="suite-RegressionTest_-_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.administration.districts.TestDistrictAndCountyCreation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfDistrictAndCountyCanBeCreatedWithInvalidData(KaþkurLietuvoj, qwerty, 9999, senamiestis g.)">
+                  </a> <!-- testIfDistrictAndCountyCanBeCreatedWithInvalidData(KaþkurLietuvoj, qwerty, 9999, senamiestis g.) -->
+                  <span class="method-name">testIfDistrictAndCountyCanBeCreatedWithInvalidData</span>
+                  <span class="parameters">(KaþkurLietuvoj, qwerty, 9999, senamiestis g.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfDistrictAndCountyCanBeCreatedWithInvalidData(TestDistrict, someLatinWQX, 299999, naujamiestis g.)">
+                  </a> <!-- testIfDistrictAndCountyCanBeCreatedWithInvalidData(TestDistrict, someLatinWQX, 299999, naujamiestis g.) -->
+                  <span class="method-name">testIfDistrictAndCountyCanBeCreatedWithInvalidData</span>
+                  <span class="parameters">(TestDistrict, someLatinWQX, 299999, naujamiestis g.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfDistrictAndCountyCanBeCreatedWithValidData(TestDistrict, testerCounty, 2999, Þirmûnø gatvë)">
+                  </a> <!-- testIfDistrictAndCountyCanBeCreatedWithValidData(TestDistrict, testerCounty, 2999, Þirmûnø gatvë) -->
+                  <span class="method-name">testIfDistrictAndCountyCanBeCreatedWithValidData</span>
+                  <span class="parameters">(TestDistrict, testerCounty, 2999, Þirmûnø gatvë)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfDistrictAndCountyCanBeCreatedWithValidData(KaþkurLietuvoj, KaþkurVilniuj, 9999, Antakalnio gatvë)">
+                  </a> <!-- testIfDistrictAndCountyCanBeCreatedWithValidData(KaþkurLietuvoj, KaþkurVilniuj, 9999, Antakalnio gatvë) -->
+                  <span class="method-name">testIfDistrictAndCountyCanBeCreatedWithValidData</span>
+                  <span class="parameters">(KaþkurLietuvoj, KaþkurVilniuj, 9999, Antakalnio gatvë)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfDistrictAndCountyCanBeCreatedWithdNullData">
+                  </a> <!-- testIfDistrictAndCountyCanBeCreatedWithdNullData -->
+                  <span class="method-name">testIfDistrictAndCountyCanBeCreatedWithdNullData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest_-_Suite-class-skipped -->
+          <div class="suite-RegressionTest_-_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.administration.districts.TestDistrictCreation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfSingleDistrictCanBeCreatedWithInvalidData(District with latin symbol x)">
+                  </a> <!-- testIfSingleDistrictCanBeCreatedWithInvalidData(District with latin symbol x) -->
+                  <span class="method-name">testIfSingleDistrictCanBeCreatedWithInvalidData</span>
+                  <span class="parameters">(District with latin symbol x)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfSingleDistrictCanBeCreatedWithInvalidData(More latin symbols qwz)">
+                  </a> <!-- testIfSingleDistrictCanBeCreatedWithInvalidData(More latin symbols qwz) -->
+                  <span class="method-name">testIfSingleDistrictCanBeCreatedWithInvalidData</span>
+                  <span class="parameters">(More latin symbols qwz)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfSingleDistrictCanBeCreatedWithNullData">
+                  </a> <!-- testIfSingleDistrictCanBeCreatedWithNullData -->
+                  <span class="method-name">testIfSingleDistrictCanBeCreatedWithNullData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfSingleDistrictCanBeCreatedWithValidData(District contains Lithuanian symbols ðà)">
+                  </a> <!-- testIfSingleDistrictCanBeCreatedWithValidData(District contains Lithuanian symbols ðà) -->
+                  <span class="method-name">testIfSingleDistrictCanBeCreatedWithValidData</span>
+                  <span class="parameters">(District contains Lithuanian symbols ðà)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfSingleDistrictCanBeCreatedWithValidData(Testing District)">
+                  </a> <!-- testIfSingleDistrictCanBeCreatedWithValidData(Testing District) -->
+                  <span class="method-name">testIfSingleDistrictCanBeCreatedWithValidData</span>
+                  <span class="parameters">(Testing District)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest_-_Suite-class-skipped -->
+          <div class="suite-RegressionTest_-_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfAdministratorCanRejectVotingResults">
+                  </a> <!-- testIfAdministratorCanRejectVotingResults -->
+                  <span class="method-name">testIfAdministratorCanRejectVotingResults</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfMultiMandateVotingResultsCanBeUploaded(100, 200)">
+                  </a> <!-- testIfMultiMandateVotingResultsCanBeUploaded(100, 200) -->
+                  <span class="method-name">testIfMultiMandateVotingResultsCanBeUploaded</span>
+                  <span class="parameters">(100, 200)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfSingleMandateVotingResultsCanBeUploaded(100, 200)">
+                  </a> <!-- testIfSingleMandateVotingResultsCanBeUploaded(100, 200) -->
+                  <span class="method-name">testIfSingleMandateVotingResultsCanBeUploaded</span>
+                  <span class="parameters">(100, 200)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest_-_Suite-class-skipped -->
+          <div class="suite-RegressionTest_-_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.administration.districts.TestEditFunction</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfSingleDistrictCanBeCreatedWithValidData(TestDistrict, testCounty, 299, naujamiestis g., Kaþkur, Lietuvoj, 700, senamiestis g.)">
+                  </a> <!-- testIfSingleDistrictCanBeCreatedWithValidData(TestDistrict, testCounty, 299, naujamiestis g., Kaþkur, Lietuvoj, 700, senamiestis g.) -->
+                  <span class="method-name">testIfSingleDistrictCanBeCreatedWithValidData</span>
+                  <span class="parameters">(TestDistrict, testCounty, 299, naujamiestis g., Kaþkur, Lietuvoj, 700, senamiestis g.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest_-_Suite-class-skipped -->
+          <div class="suite-RegressionTest_-_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.representative.TestIfRepresentativePageHasMainComponents</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfMultisMandateVotingResultsWebpartIsAvailable">
+                  </a> <!-- testIfMultisMandateVotingResultsWebpartIsAvailable -->
+                  <span class="method-name">testIfMultisMandateVotingResultsWebpartIsAvailable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfSingleMandateVotingResultsWebpartIsAvailable">
+                  </a> <!-- testIfSingleMandateVotingResultsWebpartIsAvailable -->
+                  <span class="method-name">testIfSingleMandateVotingResultsWebpartIsAvailable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest_-_Suite-class-skipped -->
+          <div class="suite-RegressionTest_-_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="prepareTheDistrict">
+                  </a> <!-- prepareTheDistrict -->
+                  <span class="method-name">prepareTheDistrict</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeTheDistrict">
+                  </a> <!-- removeTheDistrict -->
+                  <span class="method-name">removeTheDistrict</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfCandidatsCanBeRemovedFromTheDistrict">
+                  </a> <!-- testIfCandidatsCanBeRemovedFromTheDistrict -->
+                  <span class="method-name">testIfCandidatsCanBeRemovedFromTheDistrict</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIfDistrictCandidatesCanBeAddedToSpecificDistrict(testName, testSurname, 38706092222, testParty, Ilgas ilgas kandidato aprasymas beveik kaip pasaka ti...)">
+                  </a> <!-- testIfDistrictCandidatesCanBeAddedToSpecificDistrict(testName, testSurname, 38706092222, testParty, Ilgas ilgas kandidato aprasymas beveik kaip pasaka ti...) -->
+                  <span class="method-name">testIfDistrictCandidatesCanBeAddedToSpecificDistrict</span>
+                  <span class="parameters">(testName, testSurname, 38706092222, testParty, Ilgas ilgas kandidato aprasymas beveik kaip pasaka tik imk ir balsouk uz toki)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionTest_-_Suite-class-skipped -->
+        </div> <!-- panel RegressionTest_-_Suite -->
+        <div panel-name="test-xml-RegressionTest_-_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Mindaug4s\workspace\VotingSystem\src\test\java\tests\regressionTest.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;RegressionTest - Suite&quot;&gt;
+  &lt;test name=&quot;Test all main functionallities&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.homepage.TestIfHomePageHasMainComponents&quot;/&gt;
+      &lt;class name=&quot;tests.administration.TestIfAdministratorPageHasMainComponents&quot;/&gt;
+      &lt;class name=&quot;tests.votingResults.TestIfCandidateSearchIsAvailable&quot;/&gt;
+      &lt;class name=&quot;tests.administration.districts.TestDistrictCreation&quot;/&gt;
+      &lt;class name=&quot;tests.administration.districts.TestDistrictAndCountyCreation&quot;/&gt;
+      &lt;class name=&quot;tests.administration.districts.TestEditFunction&quot;/&gt;
+      &lt;class name=&quot;tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted&quot;/&gt;
+      &lt;class name=&quot;tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted&quot;/&gt;
+      &lt;class name=&quot;tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted&quot;/&gt;
+      &lt;class name=&quot;tests.administration.countyResults.TestCountyResultsPageIsAvailable&quot;/&gt;
+      &lt;class name=&quot;tests.representative.TestIfRepresentativePageHasMainComponents&quot;/&gt;
+      &lt;class name=&quot;tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test all main functionallities --&gt;
+&lt;/suite&gt; &lt;!-- RegressionTest - Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-RegressionTest_-_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for RegressionTest - Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test all main functionallities (12 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-RegressionTest_-_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for RegressionTest - Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-RegressionTest_-_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for RegressionTest - Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_RegressionTest_-_Suite');
+function tableData_RegressionTest_-_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(41);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testIfWebPageTitleHeaderIsAvailable')
+data.setCell(0, 2, 'tests.homepage.TestIfHomePageHasMainComponents')
+data.setCell(0, 3, 12234);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testIfLoginButtonAvailble')
+data.setCell(1, 2, 'tests.homepage.TestIfHomePageHasMainComponents')
+data.setCell(1, 3, 6663);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'removeTheDistrict')
+data.setCell(2, 2, 'tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted')
+data.setCell(2, 3, 92);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testIfDistrictAndCountyCanBeCreatedWithdNullData')
+data.setCell(3, 2, 'tests.administration.districts.TestDistrictAndCountyCreation')
+data.setCell(3, 3, 5);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testIfRepresentativeCanBeCreatedAndDeleted')
+data.setCell(4, 2, 'tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted')
+data.setCell(4, 3, 3);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'removeTheDistrict')
+data.setCell(5, 2, 'tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted')
+data.setCell(5, 3, 2);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testIfCountyRepresentativesMenuElementIsAvailable')
+data.setCell(6, 2, 'tests.administration.TestIfAdministratorPageHasMainComponents')
+data.setCell(6, 3, 2);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testIfDistrictAndCountyCanBeCreatedWithValidData')
+data.setCell(7, 2, 'tests.administration.districts.TestDistrictAndCountyCreation')
+data.setCell(7, 3, 2);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'prepareTheDistrict')
+data.setCell(8, 2, 'tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted')
+data.setCell(8, 3, 2);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testIfDistrictCandidatesCanBeAddedToSpecificDistrict')
+data.setCell(9, 2, 'tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testIfCandidateSearchMenuElementAvailble')
+data.setCell(10, 2, 'tests.homepage.TestIfHomePageHasMainComponents')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testIfDistrictAndCountyCanBeCreatedWithInvalidData')
+data.setCell(11, 2, 'tests.administration.districts.TestDistrictAndCountyCreation')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testIfDistrictsMenuElementIsAvailable')
+data.setCell(12, 2, 'tests.administration.TestIfAdministratorPageHasMainComponents')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testIfDistrictCandidatesCanBeAddedToSpecificDistrict')
+data.setCell(13, 2, 'tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testIfSingleDistrictCanBeCreatedWithValidData')
+data.setCell(14, 2, 'tests.administration.districts.TestDistrictCreation')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testIfPartyCanBeCreatedWithNullParameters')
+data.setCell(15, 2, 'tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testIfDistrictAndCountyCanBeCreatedWithInvalidData')
+data.setCell(16, 2, 'tests.administration.districts.TestDistrictAndCountyCreation')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testIfRepresentativeCanNotBeCreatedWithNullParameters')
+data.setCell(17, 2, 'tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testIfSingleDistrictCanBeCreatedWithInvalidData')
+data.setCell(18, 2, 'tests.administration.districts.TestDistrictCreation')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testIfPartyCanBeDeletedFromTheDistrict')
+data.setCell(19, 2, 'tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testIfMultiMandateVotingResultsCanBeUploaded')
+data.setCell(20, 2, 'tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testIfSingleDistrictCanBeCreatedWithValidData')
+data.setCell(21, 2, 'tests.administration.districts.TestEditFunction')
+data.setCell(21, 3, 1);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testIfSingleDistrictCanBeCreatedWithValidData')
+data.setCell(22, 2, 'tests.administration.districts.TestDistrictCreation')
+data.setCell(22, 3, 1);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testIfSingleDistrictCanBeCreatedWithInvalidData')
+data.setCell(23, 2, 'tests.administration.districts.TestDistrictCreation')
+data.setCell(23, 3, 1);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testIfCountyResultsMenuElementIsAvailable')
+data.setCell(24, 2, 'tests.administration.TestIfAdministratorPageHasMainComponents')
+data.setCell(24, 3, 1);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testIfMultiMandateResultsMenuElementAvailble')
+data.setCell(25, 2, 'tests.homepage.TestIfHomePageHasMainComponents')
+data.setCell(25, 3, 1);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testIfAdministratorCanRejectVotingResults')
+data.setCell(26, 2, 'tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem')
+data.setCell(26, 3, 1);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testIfCandidatesCanBeDeletedFromTheParty')
+data.setCell(27, 2, 'tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted')
+data.setCell(27, 3, 1);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testIfSingleDistrictCanBeCreatedWithNullData')
+data.setCell(28, 2, 'tests.administration.districts.TestDistrictCreation')
+data.setCell(28, 3, 1);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testIfCandidatsCanBeRemovedFromTheDistrict')
+data.setCell(29, 2, 'tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted')
+data.setCell(29, 3, 1);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testIfPartiesMenuElementIsAvailable')
+data.setCell(30, 2, 'tests.administration.TestIfAdministratorPageHasMainComponents')
+data.setCell(30, 3, 1);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'prepareTheDistrictAndCounty')
+data.setCell(31, 2, 'tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted')
+data.setCell(31, 3, 1);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testIfDistrictAndCountyCanBeCreatedWithValidData')
+data.setCell(32, 2, 'tests.administration.districts.TestDistrictAndCountyCreation')
+data.setCell(32, 3, 1);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testIfDistrictCandidatesMenuElementIsAvailable')
+data.setCell(33, 2, 'tests.administration.TestIfAdministratorPageHasMainComponents')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testIfMainElementsAreAvailable')
+data.setCell(34, 2, 'tests.administration.countyResults.TestCountyResultsPageIsAvailable')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testIfSingleMandateVotingResultsCanBeUploaded')
+data.setCell(35, 2, 'tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testIfMainCandidateSearchComponentsAreAvailable')
+data.setCell(36, 2, 'tests.votingResults.TestIfCandidateSearchIsAvailable')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testIfSummarizedResultsMenuElementAvailble')
+data.setCell(37, 2, 'tests.homepage.TestIfHomePageHasMainComponents')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testIfMultisMandateVotingResultsWebpartIsAvailable')
+data.setCell(38, 2, 'tests.representative.TestIfRepresentativePageHasMainComponents')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testIfSingleMandateResultsMenuElementAvailble')
+data.setCell(39, 2, 'tests.homepage.TestIfHomePageHasMainComponents')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testIfSingleMandateVotingResultsWebpartIsAvailable')
+data.setCell(40, 2, 'tests.representative.TestIfRepresentativePageHasMainComponents')
+data.setCell(40, 3, 0);
+window.suiteTableData['RegressionTest_-_Suite']= { tableData: data, tableDiv: 'times-div-RegressionTest_-_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <div id="times-div-RegressionTest_-_Suite">
+              </div> <!-- times-div-RegressionTest_-_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-RegressionTest_-_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for RegressionTest - Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-RegressionTest_-_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-RegressionTest_-_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.homepage.TestIfHomePageHasMainComponents</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">prepareForTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testIfWebPageTitleHeaderIsAvailable</span>
+                <span class="method-start">2508 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">14749 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">prepareForTest</span>
+                <span class="method-start">14759 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testIfLoginButtonAvailble</span>
+                <span class="method-start">16552 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">23219 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testIfCandidateSearchMenuElementAvailble</span>
+                <span class="method-start">24235 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfSingleMandateResultsMenuElementAvailble</span>
+                <span class="method-start">24238 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfMultiMandateResultsMenuElementAvailble</span>
+                <span class="method-start">24240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfSummarizedResultsMenuElementAvailble</span>
+                <span class="method-start">24243 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.administration.TestIfAdministratorPageHasMainComponents</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testIfDistrictsMenuElementIsAvailable</span>
+                <span class="method-start">24248 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfDistrictCandidatesMenuElementIsAvailable</span>
+                <span class="method-start">24252 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfCountyRepresentativesMenuElementIsAvailable</span>
+                <span class="method-start">24255 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfPartiesMenuElementIsAvailable</span>
+                <span class="method-start">24262 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfCountyResultsMenuElementIsAvailable</span>
+                <span class="method-start">24267 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.votingResults.TestIfCandidateSearchIsAvailable</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testIfMainCandidateSearchComponentsAreAvailable</span>
+                <span class="method-start">24271 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.administration.districts.TestDistrictCreation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testIfSingleDistrictCanBeCreatedWithValidData(Testing District)</span>
+                <span class="method-start">24283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfSingleDistrictCanBeCreatedWithValidData(District contains Lithuanian symbols ðà)</span>
+                <span class="method-start">24288 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfSingleDistrictCanBeCreatedWithInvalidData(District with latin symbol x)</span>
+                <span class="method-start">24294 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfSingleDistrictCanBeCreatedWithInvalidData(More latin symbols qwz)</span>
+                <span class="method-start">24298 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfSingleDistrictCanBeCreatedWithNullData</span>
+                <span class="method-start">24302 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.administration.districts.TestDistrictAndCountyCreation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testIfDistrictAndCountyCanBeCreatedWithValidData(TestDistrict, testerCounty, 2999, Þirmûnø gatvë)</span>
+                <span class="method-start">24330 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfDistrictAndCountyCanBeCreatedWithValidData(KaþkurLietuvoj, KaþkurVilniuj, 9999, Antakalnio gatvë)</span>
+                <span class="method-start">24335 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfDistrictAndCountyCanBeCreatedWithInvalidData(TestDistrict, someLatinWQX, 299999, naujamiestis g.)</span>
+                <span class="method-start">24341 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfDistrictAndCountyCanBeCreatedWithInvalidData(KaþkurLietuvoj, qwerty, 9999, senamiestis g.)</span>
+                <span class="method-start">24345 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfDistrictAndCountyCanBeCreatedWithdNullData</span>
+                <span class="method-start">24427 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.administration.districts.TestEditFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testIfSingleDistrictCanBeCreatedWithValidData(TestDistrict, testCounty, 299, naujamiestis g., Kaþkur, Lietuvoj, 700, senamiestis g.)</span>
+                <span class="method-start">24441 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">prepareTheDistrict</span>
+                <span class="method-start">24451 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfDistrictCandidatesCanBeAddedToSpecificDistrict(testName, testSurname, 38706092222, testParty, Ilgas ilgas kandidato aprasymas beveik kaip pasaka ti...)</span>
+                <span class="method-start">24461 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfCandidatsCanBeRemovedFromTheDistrict</span>
+                <span class="method-start">24560 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">removeTheDistrict</span>
+                <span class="method-start">24565 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">prepareTheDistrictAndCounty</span>
+                <span class="method-start">24571 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfRepresentativeCanBeCreatedAndDeleted(Testperson, Testsurname, testing@test.itak)</span>
+                <span class="method-start">24578 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfRepresentativeCanNotBeCreatedWithNullParameters</span>
+                <span class="method-start">24586 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">removeTheDistrict</span>
+                <span class="method-start">24591 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testIfDistrictCandidatesCanBeAddedToSpecificDistrict(1, testingName, testingSurname, 38706093333, "Ilgas ilgas kandidato aprasymas beveik kaip pasaka tik...)</span>
+                <span class="method-start">24688 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfCandidatesCanBeDeletedFromTheParty</span>
+                <span class="method-start">24692 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfPartyCanBeDeletedFromTheDistrict</span>
+                <span class="method-start">24695 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfPartyCanBeCreatedWithNullParameters</span>
+                <span class="method-start">24779 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.administration.countyResults.TestCountyResultsPageIsAvailable</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testIfMainElementsAreAvailable</span>
+                <span class="method-start">24783 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.representative.TestIfRepresentativePageHasMainComponents</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testIfSingleMandateVotingResultsWebpartIsAvailable</span>
+                <span class="method-start">24785 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfMultisMandateVotingResultsWebpartIsAvailable</span>
+                <span class="method-start">24787 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testIfSingleMandateVotingResultsCanBeUploaded(100, 200)</span>
+                <span class="method-start">24887 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfMultiMandateVotingResultsCanBeUploaded(100, 200)</span>
+                <span class="method-start">24891 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIfAdministratorCanRejectVotingResults</span>
+                <span class="method-start">24894 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

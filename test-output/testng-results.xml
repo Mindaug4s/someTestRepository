@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="39" failed="2" total="41" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="RegressionTest - Suite" duration-ms="24914" started-at="2017-06-21T18:27:31Z" finished-at="2017-06-21T18:27:56Z">
+    <groups>
+    </groups>
+    <test name="Test all main functionallities" duration-ms="24914" started-at="2017-06-21T18:27:31Z" finished-at="2017-06-21T18:27:56Z">
+      <class name="tests.administration.districts.TestDistrictAndCountyCreation">
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.districts.TestDistrictAndCountyCreation@1794d431]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfDistrictAndCountyCanBeCreatedWithValidData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.administration.districts.TestDistrictAndCountyCreation@1794d431]" name="testIfDistrictAndCountyCanBeCreatedWithValidData" duration-ms="2" started-at="2017-06-21T21:27:55Z" data-provider="DistrictsAndCountiesValidDataProvider" finished-at="2017-06-21T21:27:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestDistrict]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testerCounty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2999]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Žirmūnų gatvė]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfDistrictAndCountyCanBeCreatedWithValidData -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.districts.TestDistrictAndCountyCreation@1794d431]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.districts.TestDistrictAndCountyCreation@1794d431]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfDistrictAndCountyCanBeCreatedWithValidData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.administration.districts.TestDistrictAndCountyCreation@1794d431]" name="testIfDistrictAndCountyCanBeCreatedWithValidData" duration-ms="1" started-at="2017-06-21T21:27:55Z" data-provider="DistrictsAndCountiesValidDataProvider" finished-at="2017-06-21T21:27:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KažkurLietuvoj]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[KažkurVilniuj]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Antakalnio gatvė]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfDistrictAndCountyCanBeCreatedWithValidData -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.districts.TestDistrictAndCountyCreation@1794d431]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.districts.TestDistrictAndCountyCreation@1794d431]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfDistrictAndCountyCanBeCreatedWithInvalidData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.administration.districts.TestDistrictAndCountyCreation@1794d431]" name="testIfDistrictAndCountyCanBeCreatedWithInvalidData" duration-ms="1" started-at="2017-06-21T21:27:55Z" data-provider="DistrictsAndCountiesInvalidDataProvider" finished-at="2017-06-21T21:27:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestDistrict]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[someLatinWQX]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[299999]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[naujamiestis g.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfDistrictAndCountyCanBeCreatedWithInvalidData -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.districts.TestDistrictAndCountyCreation@1794d431]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.districts.TestDistrictAndCountyCreation@1794d431]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfDistrictAndCountyCanBeCreatedWithInvalidData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.administration.districts.TestDistrictAndCountyCreation@1794d431]" name="testIfDistrictAndCountyCanBeCreatedWithInvalidData" duration-ms="1" started-at="2017-06-21T21:27:55Z" data-provider="DistrictsAndCountiesInvalidDataProvider" finished-at="2017-06-21T21:27:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KažkurLietuvoj]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qwerty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[senamiestis g.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfDistrictAndCountyCanBeCreatedWithInvalidData -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.districts.TestDistrictAndCountyCreation@1794d431]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.districts.TestDistrictAndCountyCreation@1794d431]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfDistrictAndCountyCanBeCreatedWithdNullData()[pri:0, instance:tests.administration.districts.TestDistrictAndCountyCreation@1794d431]" name="testIfDistrictAndCountyCanBeCreatedWithdNullData" duration-ms="5" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfDistrictAndCountyCanBeCreatedWithdNullData -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.districts.TestDistrictAndCountyCreation@1794d431]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.administration.districts.TestDistrictAndCountyCreation -->
+      <class name="tests.votingResults.TestIfCandidateSearchIsAvailable">
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.votingResults.TestIfCandidateSearchIsAvailable@6d4b1c02]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfMainCandidateSearchComponentsAreAvailable()[pri:0, instance:tests.votingResults.TestIfCandidateSearchIsAvailable@6d4b1c02]" name="testIfMainCandidateSearchComponentsAreAvailable" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfMainCandidateSearchComponentsAreAvailable -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.votingResults.TestIfCandidateSearchIsAvailable@6d4b1c02]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.votingResults.TestIfCandidateSearchIsAvailable -->
+      <class name="tests.administration.districts.TestDistrictCreation">
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.districts.TestDistrictCreation@39c0f4a]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfSingleDistrictCanBeCreatedWithValidData(java.lang.String)[pri:0, instance:tests.administration.districts.TestDistrictCreation@39c0f4a]" name="testIfSingleDistrictCanBeCreatedWithValidData" duration-ms="1" started-at="2017-06-21T21:27:55Z" data-provider="DistrictsValidDataProvider" finished-at="2017-06-21T21:27:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testing District]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfSingleDistrictCanBeCreatedWithValidData -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.districts.TestDistrictCreation@39c0f4a]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.districts.TestDistrictCreation@39c0f4a]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="testIfSingleDistrictCanBeCreatedWithValidData(java.lang.String)[pri:0, instance:tests.administration.districts.TestDistrictCreation@39c0f4a]" name="testIfSingleDistrictCanBeCreatedWithValidData" duration-ms="1" started-at="2017-06-21T21:27:55Z" data-provider="DistrictsValidDataProvider" finished-at="2017-06-21T21:27:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[District contains Lithuanian symbols šą]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfSingleDistrictCanBeCreatedWithValidData -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.districts.TestDistrictCreation@39c0f4a]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.districts.TestDistrictCreation@39c0f4a]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfSingleDistrictCanBeCreatedWithInvalidData(java.lang.String)[pri:0, instance:tests.administration.districts.TestDistrictCreation@39c0f4a]" name="testIfSingleDistrictCanBeCreatedWithInvalidData" duration-ms="1" started-at="2017-06-21T21:27:55Z" data-provider="DistrictsInvalidDataProvider" finished-at="2017-06-21T21:27:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[District with latin symbol x]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfSingleDistrictCanBeCreatedWithInvalidData -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.districts.TestDistrictCreation@39c0f4a]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.districts.TestDistrictCreation@39c0f4a]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfSingleDistrictCanBeCreatedWithInvalidData(java.lang.String)[pri:0, instance:tests.administration.districts.TestDistrictCreation@39c0f4a]" name="testIfSingleDistrictCanBeCreatedWithInvalidData" duration-ms="1" started-at="2017-06-21T21:27:55Z" data-provider="DistrictsInvalidDataProvider" finished-at="2017-06-21T21:27:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[More latin symbols qwz]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfSingleDistrictCanBeCreatedWithInvalidData -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.districts.TestDistrictCreation@39c0f4a]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.districts.TestDistrictCreation@39c0f4a]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfSingleDistrictCanBeCreatedWithNullData()[pri:0, instance:tests.administration.districts.TestDistrictCreation@39c0f4a]" name="testIfSingleDistrictCanBeCreatedWithNullData" duration-ms="1" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfSingleDistrictCanBeCreatedWithNullData -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.districts.TestDistrictCreation@39c0f4a]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.administration.districts.TestDistrictCreation -->
+      <class name="tests.administration.countyResults.TestCountyResultsPageIsAvailable">
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.countyResults.TestCountyResultsPageIsAvailable@7d9d1a19]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfMainElementsAreAvailable()[pri:0, instance:tests.administration.countyResults.TestCountyResultsPageIsAvailable@7d9d1a19]" name="testIfMainElementsAreAvailable" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfMainElementsAreAvailable -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.countyResults.TestCountyResultsPageIsAvailable@7d9d1a19]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.administration.countyResults.TestCountyResultsPageIsAvailable -->
+      <class name="tests.homepage.TestIfHomePageHasMainComponents">
+        <test-method status="PASS" signature="prepareForTest()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="prepareForTest" is-config="true" duration-ms="2507" started-at="2017-06-21T21:27:31Z" finished-at="2017-06-21T21:27:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="FAIL" signature="testIfWebPageTitleHeaderIsAvailable()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="testIfWebPageTitleHeaderIsAvailable" duration-ms="12234" started-at="2017-06-21T21:27:34Z" finished-at="2017-06-21T21:27:46Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"id","selector":"website-page-title"}
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Mindaug4s-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d289ae25-348d-454a-88c4-bd68e3c355b9
+*** Element info: {Using=id, value=website-page-title}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"website-page-title"}
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Mindaug4s-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d289ae25-348d-454a-88c4-bd68e3c355b9
+*** Element info: {Using=id, value=website-page-title}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at tests.homepage.TestIfHomePageHasMainComponents.testIfWebPageTitleHeaderIsAvailable(TestIfHomePageHasMainComponents.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"website-page-title"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Mindaug4s-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/MINDAU~1/AppData/Local/Temp/anonymous1753031544479347351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/MINDAU~1/AppData/Local/Temp/anonymous1753031544479347351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfWebPageTitleHeaderIsAvailable -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="closeBrowser" is-config="true" duration-ms="10" started-at="2017-06-21T21:27:46Z" finished-at="2017-06-21T21:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="prepareForTest()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="prepareForTest" is-config="true" duration-ms="1793" started-at="2017-06-21T21:27:46Z" finished-at="2017-06-21T21:27:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="FAIL" signature="testIfLoginButtonAvailble()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="testIfLoginButtonAvailble" duration-ms="6663" started-at="2017-06-21T21:27:48Z" finished-at="2017-06-21T21:27:54Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Mindaug4s-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 75235d3b-757f-4f6c-b3eb-60c5619c49d2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Mindaug4s-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 75235d3b-757f-4f6c-b3eb-60c5619c49d2
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at tests.homepage.TestIfHomePageHasMainComponents.testIfLoginButtonAvailble(TestIfHomePageHasMainComponents.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:162)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 32 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 47 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfLoginButtonAvailble -->
+        <test-method status="FAIL" signature="closeBrowser()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:54Z" finished-at="2017-06-21T21:27:54Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Mindaug4s-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 75235d3b-757f-4f6c-b3eb-60c5619c49d2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Mindaug4s-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 75235d3b-757f-4f6c-b3eb-60c5619c49d2
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at tests.BaseTestPattern.closeBrowser(BaseTestPattern.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 29 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 44 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfCandidateSearchMenuElementAvailble()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="testIfCandidateSearchMenuElementAvailble" duration-ms="1" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfCandidateSearchMenuElementAvailble -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfSingleMandateResultsMenuElementAvailble()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="testIfSingleMandateResultsMenuElementAvailble" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfSingleMandateResultsMenuElementAvailble -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="testIfMultiMandateResultsMenuElementAvailble()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="testIfMultiMandateResultsMenuElementAvailble" duration-ms="1" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfMultiMandateResultsMenuElementAvailble -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfSummarizedResultsMenuElementAvailble()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="testIfSummarizedResultsMenuElementAvailble" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfSummarizedResultsMenuElementAvailble -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.homepage.TestIfHomePageHasMainComponents@5622fdf]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.homepage.TestIfHomePageHasMainComponents -->
+      <class name="tests.representative.TestIfRepresentativePageHasMainComponents">
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.representative.TestIfRepresentativePageHasMainComponents@343f4d3d]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.representative.TestIfRepresentativePageHasMainComponents@343f4d3d]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="testIfSingleMandateVotingResultsWebpartIsAvailable()[pri:0, instance:tests.representative.TestIfRepresentativePageHasMainComponents@343f4d3d]" name="testIfSingleMandateVotingResultsWebpartIsAvailable" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfSingleMandateVotingResultsWebpartIsAvailable -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.representative.TestIfRepresentativePageHasMainComponents@343f4d3d]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfMultisMandateVotingResultsWebpartIsAvailable()[pri:0, instance:tests.representative.TestIfRepresentativePageHasMainComponents@343f4d3d]" name="testIfMultisMandateVotingResultsWebpartIsAvailable" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfMultisMandateVotingResultsWebpartIsAvailable -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.representative.TestIfRepresentativePageHasMainComponents@343f4d3d]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.representative.TestIfRepresentativePageHasMainComponents -->
+      <class name="tests.administration.TestIfAdministratorPageHasMainComponents">
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.TestIfAdministratorPageHasMainComponents@4883b407]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfDistrictsMenuElementIsAvailable()[pri:0, instance:tests.administration.TestIfAdministratorPageHasMainComponents@4883b407]" name="testIfDistrictsMenuElementIsAvailable" duration-ms="1" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfDistrictsMenuElementIsAvailable -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.TestIfAdministratorPageHasMainComponents@4883b407]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.TestIfAdministratorPageHasMainComponents@4883b407]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfDistrictCandidatesMenuElementIsAvailable()[pri:0, instance:tests.administration.TestIfAdministratorPageHasMainComponents@4883b407]" name="testIfDistrictCandidatesMenuElementIsAvailable" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfDistrictCandidatesMenuElementIsAvailable -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.TestIfAdministratorPageHasMainComponents@4883b407]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.TestIfAdministratorPageHasMainComponents@4883b407]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfCountyRepresentativesMenuElementIsAvailable()[pri:0, instance:tests.administration.TestIfAdministratorPageHasMainComponents@4883b407]" name="testIfCountyRepresentativesMenuElementIsAvailable" duration-ms="2" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfCountyRepresentativesMenuElementIsAvailable -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.TestIfAdministratorPageHasMainComponents@4883b407]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.TestIfAdministratorPageHasMainComponents@4883b407]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfPartiesMenuElementIsAvailable()[pri:0, instance:tests.administration.TestIfAdministratorPageHasMainComponents@4883b407]" name="testIfPartiesMenuElementIsAvailable" duration-ms="1" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfPartiesMenuElementIsAvailable -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.TestIfAdministratorPageHasMainComponents@4883b407]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.TestIfAdministratorPageHasMainComponents@4883b407]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfCountyResultsMenuElementIsAvailable()[pri:0, instance:tests.administration.TestIfAdministratorPageHasMainComponents@4883b407]" name="testIfCountyResultsMenuElementIsAvailable" duration-ms="1" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfCountyResultsMenuElementIsAvailable -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.TestIfAdministratorPageHasMainComponents@4883b407]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.administration.TestIfAdministratorPageHasMainComponents -->
+      <class name="tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted">
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="prepareTheDistrict()[pri:0, instance:tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7]" name="prepareTheDistrict" duration-ms="2" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareTheDistrict -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfDistrictCandidatesCanBeAddedToSpecificDistrict(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7]" name="testIfDistrictCandidatesCanBeAddedToSpecificDistrict" duration-ms="1" started-at="2017-06-21T21:27:55Z" data-provider="DistrictCandidatedDataProvider" finished-at="2017-06-21T21:27:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testSurname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[38706092222]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[testParty]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Ilgas ilgas kandidato aprasymas beveik kaip pasaka tik imk ir balsouk uz toki]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfDistrictCandidatesCanBeAddedToSpecificDistrict -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfCandidatsCanBeRemovedFromTheDistrict()[pri:0, instance:tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7]" name="testIfCandidatsCanBeRemovedFromTheDistrict" duration-ms="1" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfCandidatsCanBeRemovedFromTheDistrict -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="removeTheDistrict()[pri:0, instance:tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7]" name="removeTheDistrict" duration-ms="2" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeTheDistrict -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted -->
+      <class name="tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem">
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfSingleMandateVotingResultsCanBeUploaded(java.lang.String, java.lang.String)[pri:0, instance:tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948]" name="testIfSingleMandateVotingResultsCanBeUploaded" duration-ms="0" started-at="2017-06-21T21:27:56Z" data-provider="ValidVotesDataProvider" finished-at="2017-06-21T21:27:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfSingleMandateVotingResultsCanBeUploaded -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfMultiMandateVotingResultsCanBeUploaded(java.lang.String, java.lang.String)[pri:0, instance:tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948]" name="testIfMultiMandateVotingResultsCanBeUploaded" duration-ms="1" started-at="2017-06-21T21:27:56Z" data-provider="ValidVotesDataProvider" finished-at="2017-06-21T21:27:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfMultiMandateVotingResultsCanBeUploaded -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfAdministratorCanRejectVotingResults()[pri:0, instance:tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948]" name="testIfAdministratorCanRejectVotingResults" duration-ms="1" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfAdministratorCanRejectVotingResults -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem -->
+      <class name="tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted">
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="prepareTheDistrictAndCounty()[pri:0, instance:tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95]" name="prepareTheDistrictAndCounty" duration-ms="1" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareTheDistrictAndCounty -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfRepresentativeCanBeCreatedAndDeleted(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95]" name="testIfRepresentativeCanBeCreatedAndDeleted" duration-ms="3" started-at="2017-06-21T21:27:56Z" data-provider="CountyRepresentativeValidDataProvider" finished-at="2017-06-21T21:27:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testperson]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testsurname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[testing@test.itak]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfRepresentativeCanBeCreatedAndDeleted -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfRepresentativeCanNotBeCreatedWithNullParameters()[pri:0, instance:tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95]" name="testIfRepresentativeCanNotBeCreatedWithNullParameters" duration-ms="1" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfRepresentativeCanNotBeCreatedWithNullParameters -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="removeTheDistrict()[pri:0, instance:tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95]" name="removeTheDistrict" duration-ms="92" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeTheDistrict -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted -->
+      <class name="tests.administration.districts.TestEditFunction">
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.districts.TestEditFunction@57baeedf]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfSingleDistrictCanBeCreatedWithValidData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.administration.districts.TestEditFunction@57baeedf]" name="testIfSingleDistrictCanBeCreatedWithValidData" duration-ms="1" started-at="2017-06-21T21:27:55Z" data-provider="DistrictsAndCountiesValidDataProviderForEditing" finished-at="2017-06-21T21:27:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestDistrict]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testCounty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[299]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[naujamiestis g.]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Kažkur]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Lietuvoj]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[700]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[senamiestis g.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfSingleDistrictCanBeCreatedWithValidData -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.districts.TestEditFunction@57baeedf]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:55Z" finished-at="2017-06-21T21:27:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.administration.districts.TestEditFunction -->
+      <class name="tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted">
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfDistrictCandidatesCanBeAddedToSpecificDistrict(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a]" name="testIfDistrictCandidatesCanBeAddedToSpecificDistrict" duration-ms="1" started-at="2017-06-21T21:27:56Z" data-provider="PartyCandidateDataProvider" finished-at="2017-06-21T21:27:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testingName]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[testingSurname]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[38706093333]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA["Ilgas ilgas kandidato aprasymas beveik kaip pasaka tik imk ir balsouk uz toki"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfDistrictCandidatesCanBeAddedToSpecificDistrict -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfCandidatesCanBeDeletedFromTheParty()[pri:0, instance:tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a]" name="testIfCandidatesCanBeDeletedFromTheParty" duration-ms="1" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfCandidatesCanBeDeletedFromTheParty -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="testIfPartyCanBeDeletedFromTheDistrict()[pri:0, instance:tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a]" name="testIfPartyCanBeDeletedFromTheDistrict" duration-ms="1" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfPartyCanBeDeletedFromTheDistrict -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="SKIP" signature="prepareForTest()[pri:0, instance:tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a]" name="prepareForTest" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareForTest -->
+        <test-method status="SKIP" signature="testIfPartyCanBeCreatedWithNullParameters()[pri:0, instance:tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a]" name="testIfPartyCanBeCreatedWithNullParameters" duration-ms="1" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIfPartyCanBeCreatedWithNullParameters -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T21:27:56Z" finished-at="2017-06-21T21:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted -->
+    </test> <!-- Test all main functionallities -->
+  </suite> <!-- RegressionTest - Suite -->
+</testng-results>

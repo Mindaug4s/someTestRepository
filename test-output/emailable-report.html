@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test all main functionallities</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">39</td><td class="numi_attn">2</td><td class="numi">24,9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test all main functionallities &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="2">tests.homepage.TestIfHomePageHasMainComponents</td><td><a href="#m1"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1498069674717</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m2"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1498069674717</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test all main functionallities &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">tests.homepage.TestIfHomePageHasMainComponents</td><td><a href="#m3"><b>testIfLoginButtonAvailble</b>  </a></td><td class="numi">1</td><td>1498069668050</td><td class="numi">6663</td></tr><tr class="failedodd"><td><a href="#m4"><b>testIfWebPageTitleHeaderIsAvailable</b>  </a></td><td class="numi">1</td><td>1498069654006</td><td class="numi">12234</td></tr>
+<tr><th colspan="4">Test all main functionallities &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="4">tests.homepage.TestIfHomePageHasMainComponents</td><td><a href="#m5"><b>closeBrowser</b>  </a></td><td class="numi">4</td><td>1498069675734</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m6"><b>closeBrowser</b>  </a></td><td class="numi">4</td><td>1498069675734</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m7"><b>prepareForTest</b>  </a></td><td class="numi">4</td><td>1498069675732</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m8"><b>prepareForTest</b>  </a></td><td class="numi">4</td><td>1498069675732</td><td class="numi">8</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.administration.districts.TestDistrictAndCountyCreation</td><td><a href="#m9"><b>prepareForTest</b>  </a></td><td class="numi">5</td><td>1498069675827</td><td class="numi">20</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.representative.TestIfRepresentativePageHasMainComponents</td><td><a href="#m10"><b>closeBrowser</b>  </a></td><td class="numi">2</td><td>1498069676283</td><td class="numi">98</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem</td><td><a href="#m11"><b>closeBrowser</b>  </a></td><td class="numi">3</td><td>1498069676386</td><td class="numi">7</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</td><td><a href="#m12"><b>closeBrowser</b>  </a></td><td class="numi">4</td><td>1498069676188</td><td class="numi">91</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td><td><a href="#m13"><b>prepareForTest</b>  </a></td><td class="numi">4</td><td>1498069675947</td><td class="numi">115</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.votingResults.TestIfCandidateSearchIsAvailable</td><td><a href="#m14"><b>prepareForTest</b>  </a></td><td class="numi">1</td><td>1498069675768</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.administration.countyResults.TestCountyResultsPageIsAvailable</td><td><a href="#m15"><b>prepareForTest</b>  </a></td><td class="numi">1</td><td>1498069676280</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.administration.districts.TestDistrictAndCountyCreation</td><td><a href="#m16"><b>closeBrowser</b>  </a></td><td class="numi">5</td><td>1498069675831</td><td class="numi">102</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem</td><td><a href="#m17"><b>prepareForTest</b>  </a></td><td class="numi">3</td><td>1498069676384</td><td class="numi">7</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.representative.TestIfRepresentativePageHasMainComponents</td><td><a href="#m18"><b>prepareForTest</b>  </a></td><td class="numi">2</td><td>1498069676282</td><td class="numi">2</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.administration.districts.TestDistrictCreation</td><td><a href="#m19"><b>prepareForTest</b>  </a></td><td class="numi">5</td><td>1498069675780</td><td class="numi">20</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</td><td><a href="#m20"><b>prepareForTest</b>  </a></td><td class="numi">4</td><td>1498069676068</td><td class="numi">19</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.administration.districts.TestDistrictCreation</td><td><a href="#m21"><b>closeBrowser</b>  </a></td><td class="numi">5</td><td>1498069675783</td><td class="numi">42</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td><td><a href="#m22"><b>closeBrowser</b>  </a></td><td class="numi">4</td><td>1498069675953</td><td class="numi">113</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.administration.TestIfAdministratorPageHasMainComponents</td><td><a href="#m23"><b>prepareForTest</b>  </a></td><td class="numi">5</td><td>1498069675745</td><td class="numi">19</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.administration.districts.TestEditFunction</td><td><a href="#m24"><b>prepareForTest</b>  </a></td><td class="numi">1</td><td>1498069675937</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.administration.TestIfAdministratorPageHasMainComponents</td><td><a href="#m25"><b>closeBrowser</b>  </a></td><td class="numi">5</td><td>1498069675748</td><td class="numi">19</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</td><td><a href="#m26"><b>closeBrowser</b>  </a></td><td class="numi">4</td><td>1498069676071</td><td class="numi">112</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.administration.countyResults.TestCountyResultsPageIsAvailable</td><td><a href="#m27"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1498069676282</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.administration.districts.TestEditFunction</td><td><a href="#m28"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1498069675942</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</td><td><a href="#m29"><b>prepareForTest</b>  </a></td><td class="numi">4</td><td>1498069676185</td><td class="numi">91</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.votingResults.TestIfCandidateSearchIsAvailable</td><td><a href="#m30"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1498069675770</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test all main functionallities &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td><td><a href="#m31"><b>prepareTheDistrict</b>  </a></td><td class="numi">1</td><td>1498069675949</td><td class="numi">2</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</td><td><a href="#m32"><b>prepareTheDistrictAndCounty</b>  </a></td><td class="numi">1</td><td>1498069676069</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td><td><a href="#m33"><b>removeTheDistrict</b>  </a></td><td class="numi">1</td><td>1498069676063</td><td class="numi">2</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</td><td><a href="#m34"><b>removeTheDistrict</b>  </a></td><td class="numi">1</td><td>1498069676089</td><td class="numi">92</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem</td><td><a href="#m35"><b>testIfAdministratorCanRejectVotingResults</b>  </a></td><td class="numi">1</td><td>1498069676392</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.homepage.TestIfHomePageHasMainComponents</td><td><a href="#m36"><b>testIfCandidateSearchMenuElementAvailble</b>  </a></td><td class="numi">1</td><td>1498069675733</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</td><td><a href="#m37"><b>testIfCandidatesCanBeDeletedFromTheParty</b>  </a></td><td class="numi">1</td><td>1498069676190</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td><td><a href="#m38"><b>testIfCandidatsCanBeRemovedFromTheDistrict</b>  </a></td><td class="numi">1</td><td>1498069676058</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="2">tests.administration.TestIfAdministratorPageHasMainComponents</td><td><a href="#m39"><b>testIfCountyRepresentativesMenuElementIsAvailable</b>  </a></td><td class="numi">1</td><td>1498069675753</td><td class="numi">2</td></tr><tr class="skippedodd"><td><a href="#m40"><b>testIfCountyResultsMenuElementIsAvailable</b>  </a></td><td class="numi">1</td><td>1498069675765</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="5">tests.administration.districts.TestDistrictAndCountyCreation</td><td><a href="#m41"><b>testIfDistrictAndCountyCanBeCreatedWithInvalidData</b>  </a></td><td class="numi">2</td><td>1498069675839</td><td class="numi">5</td></tr><tr class="skippedeven"><td><a href="#m42"><b>testIfDistrictAndCountyCanBeCreatedWithInvalidData</b>  </a></td><td class="numi">2</td><td>1498069675839</td><td class="numi">5</td></tr><tr class="skippedeven"><td><a href="#m43"><b>testIfDistrictAndCountyCanBeCreatedWithValidData</b>  </a></td><td class="numi">2</td><td>1498069675828</td><td class="numi">6</td></tr><tr class="skippedeven"><td><a href="#m44"><b>testIfDistrictAndCountyCanBeCreatedWithValidData</b>  </a></td><td class="numi">2</td><td>1498069675828</td><td class="numi">6</td></tr><tr class="skippedeven"><td><a href="#m45"><b>testIfDistrictAndCountyCanBeCreatedWithdNullData</b>  </a></td><td class="numi">1</td><td>1498069675925</td><td class="numi">5</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td><td><a href="#m46"><b>testIfDistrictCandidatesCanBeAddedToSpecificDistrict</b>  </a></td><td class="numi">1</td><td>1498069675959</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</td><td><a href="#m47"><b>testIfDistrictCandidatesCanBeAddedToSpecificDistrict</b>  </a></td><td class="numi">1</td><td>1498069676186</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="2">tests.administration.TestIfAdministratorPageHasMainComponents</td><td><a href="#m48"><b>testIfDistrictCandidatesMenuElementIsAvailable</b>  </a></td><td class="numi">1</td><td>1498069675750</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m49"><b>testIfDistrictsMenuElementIsAvailable</b>  </a></td><td class="numi">1</td><td>1498069675746</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.votingResults.TestIfCandidateSearchIsAvailable</td><td><a href="#m50"><b>testIfMainCandidateSearchComponentsAreAvailable</b>  </a></td><td class="numi">1</td><td>1498069675769</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.administration.countyResults.TestCountyResultsPageIsAvailable</td><td><a href="#m51"><b>testIfMainElementsAreAvailable</b>  </a></td><td class="numi">1</td><td>1498069676281</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.homepage.TestIfHomePageHasMainComponents</td><td><a href="#m52"><b>testIfMultiMandateResultsMenuElementAvailble</b>  </a></td><td class="numi">1</td><td>1498069675738</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem</td><td><a href="#m53"><b>testIfMultiMandateVotingResultsCanBeUploaded</b>  </a></td><td class="numi">1</td><td>1498069676389</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.representative.TestIfRepresentativePageHasMainComponents</td><td><a href="#m54"><b>testIfMultisMandateVotingResultsWebpartIsAvailable</b>  </a></td><td class="numi">1</td><td>1498069676285</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.administration.TestIfAdministratorPageHasMainComponents</td><td><a href="#m55"><b>testIfPartiesMenuElementIsAvailable</b>  </a></td><td class="numi">1</td><td>1498069675760</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="2">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</td><td><a href="#m56"><b>testIfPartyCanBeCreatedWithNullParameters</b>  </a></td><td class="numi">1</td><td>1498069676277</td><td class="numi">1</td></tr><tr class="skippedeven"><td><a href="#m57"><b>testIfPartyCanBeDeletedFromTheDistrict</b>  </a></td><td class="numi">1</td><td>1498069676193</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="2">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</td><td><a href="#m58"><b>testIfRepresentativeCanBeCreatedAndDeleted</b>  </a></td><td class="numi">1</td><td>1498069676076</td><td class="numi">3</td></tr><tr class="skippedodd"><td><a href="#m59"><b>testIfRepresentativeCanNotBeCreatedWithNullParameters</b>  </a></td><td class="numi">1</td><td>1498069676084</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="5">tests.administration.districts.TestDistrictCreation</td><td><a href="#m60"><b>testIfSingleDistrictCanBeCreatedWithInvalidData</b>  </a></td><td class="numi">2</td><td>1498069675792</td><td class="numi">5</td></tr><tr class="skippedeven"><td><a href="#m61"><b>testIfSingleDistrictCanBeCreatedWithInvalidData</b>  </a></td><td class="numi">2</td><td>1498069675792</td><td class="numi">5</td></tr><tr class="skippedeven"><td><a href="#m62"><b>testIfSingleDistrictCanBeCreatedWithNullData</b>  </a></td><td class="numi">1</td><td>1498069675800</td><td class="numi">1</td></tr><tr class="skippedeven"><td><a href="#m63"><b>testIfSingleDistrictCanBeCreatedWithValidData</b>  </a></td><td class="numi">2</td><td>1498069675781</td><td class="numi">6</td></tr><tr class="skippedeven"><td><a href="#m64"><b>testIfSingleDistrictCanBeCreatedWithValidData</b>  </a></td><td class="numi">2</td><td>1498069675781</td><td class="numi">6</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.administration.districts.TestEditFunction</td><td><a href="#m65"><b>testIfSingleDistrictCanBeCreatedWithValidData</b>  </a></td><td class="numi">1</td><td>1498069675939</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.homepage.TestIfHomePageHasMainComponents</td><td><a href="#m66"><b>testIfSingleMandateResultsMenuElementAvailble</b>  </a></td><td class="numi">1</td><td>1498069675736</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem</td><td><a href="#m67"><b>testIfSingleMandateVotingResultsCanBeUploaded</b>  </a></td><td class="numi">1</td><td>1498069676385</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">tests.representative.TestIfRepresentativePageHasMainComponents</td><td><a href="#m68"><b>testIfSingleMandateVotingResultsWebpartIsAvailable</b>  </a></td><td class="numi">1</td><td>1498069676283</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">tests.homepage.TestIfHomePageHasMainComponents</td><td><a href="#m69"><b>testIfSummarizedResultsMenuElementAvailble</b>  </a></td><td class="numi">1</td><td>1498069675741</td><td class="numi">0</td></tr>
+</table>
+<h1>Test all main functionallities</h1>
+<h2 id="m1">tests.homepage.TestIfHomePageHasMainComponents:closeBrowser</h2>
+<div style="padding-left:3em">
+<p>Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 75235d3b-757f-4f6c-b3eb-60c5619c49d2</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+<br/>at tests.BaseTestPattern.closeBrowser(BaseTestPattern.java:32)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+<br/>at org.testng.TestNG.run(TestNG.java:1031)
+<br/>at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+<br/>at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+<br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/>1 lines not shown
+<p>Caused by Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect</p>
+org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+<br/>at tests.BaseTestPattern.closeBrowser(BaseTestPattern.java:32)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+<br/>at org.testng.TestNG.run(TestNG.java:1031)
+<br/>at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+<br/>at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+<br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/>1 lines not shown
+<p>Caused by Connection refused: connect</p>
+java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+<br/>at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+<br/>at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+<br/>at java.net.PlainSocketImpl.connect(Unknown Source)
+<br/>at java.net.SocksSocketImpl.connect(Unknown Source)
+<br/>at java.net.Socket.connect(Unknown Source)
+<br/>at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+<br/>at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+<br/>at tests.BaseTestPattern.closeBrowser(BaseTestPattern.java:32)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+<br/>at org.testng.TestNG.run(TestNG.java:1031)
+<br/>at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+<br/>at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+<br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">tests.homepage.TestIfHomePageHasMainComponents:testIfLoginButtonAvailble</h2>
+<div style="padding-left:3em">
+<p>Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 75235d3b-757f-4f6c-b3eb-60c5619c49d2</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+<br/>at tests.homepage.TestIfHomePageHasMainComponents.testIfLoginButtonAvailble(TestIfHomePageHasMainComponents.java:28)
+<br/>25 lines not shown
+<p>Caused by Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect</p>
+org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:162)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+<br/>at tests.homepage.TestIfHomePageHasMainComponents.testIfLoginButtonAvailble(TestIfHomePageHasMainComponents.java:28)
+<br/>25 lines not shown
+<p>Caused by Connection refused: connect</p>
+java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+<br/>at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+<br/>at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+<br/>at java.net.PlainSocketImpl.connect(Unknown Source)
+<br/>at java.net.SocksSocketImpl.connect(Unknown Source)
+<br/>at java.net.Socket.connect(Unknown Source)
+<br/>at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+<br/>at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:162)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+<br/>at tests.homepage.TestIfHomePageHasMainComponents.testIfLoginButtonAvailble(TestIfHomePageHasMainComponents.java:28)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">tests.homepage.TestIfHomePageHasMainComponents:testIfWebPageTitleHeaderIsAvailable</h2>
+<div style="padding-left:3em">
+<p>Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;website-page-title&quot;}
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d289ae25-348d-454a-88c4-bd68e3c355b9
+*** Element info: {Using=id, value=website-page-title}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+<br/>at tests.homepage.TestIfHomePageHasMainComponents.testIfWebPageTitleHeaderIsAvailable(TestIfHomePageHasMainComponents.java:18)
+<br/>25 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;website-page-title&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/MINDAU~1/AppData/Local/Temp/anonymous1753031544479347351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+<br/>at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/MINDAU~1/AppData/Local/Temp/anonymous1753031544479347351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">tests.administration.districts.TestDistrictAndCountyCreation:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">tests.representative.TestIfRepresentativePageHasMainComponents:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">tests.votingResults.TestIfCandidateSearchIsAvailable:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">tests.administration.countyResults.TestCountyResultsPageIsAvailable:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">tests.administration.districts.TestDistrictAndCountyCreation:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">tests.representative.TestIfRepresentativePageHasMainComponents:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">tests.administration.districts.TestDistrictCreation:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">tests.administration.districts.TestDistrictCreation:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">tests.administration.TestIfAdministratorPageHasMainComponents:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">tests.administration.districts.TestEditFunction:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">tests.administration.TestIfAdministratorPageHasMainComponents:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">tests.administration.districts.TestDistrictAndCountyCreation:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">tests.administration.districts.TestDistrictAndCountyCreation:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">tests.administration.districts.TestDistrictAndCountyCreation:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">tests.administration.countyResults.TestCountyResultsPageIsAvailable:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">tests.administration.districts.TestEditFunction:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">tests.administration.TestIfAdministratorPageHasMainComponents:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">tests.homepage.TestIfHomePageHasMainComponents:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">tests.administration.districts.TestDistrictCreation:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">tests.administration.districts.TestDistrictAndCountyCreation:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">tests.administration.TestIfAdministratorPageHasMainComponents:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">tests.homepage.TestIfHomePageHasMainComponents:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">tests.administration.TestIfAdministratorPageHasMainComponents:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">tests.administration.TestIfAdministratorPageHasMainComponents:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">tests.administration.districts.TestDistrictCreation:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">tests.homepage.TestIfHomePageHasMainComponents:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">tests.homepage.TestIfHomePageHasMainComponents:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m46">tests.representative.TestIfRepresentativePageHasMainComponents:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m47">tests.homepage.TestIfHomePageHasMainComponents:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m48">tests.administration.districts.TestDistrictAndCountyCreation:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m49">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m50">tests.administration.districts.TestDistrictAndCountyCreation:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m51">tests.administration.TestIfAdministratorPageHasMainComponents:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m52">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m53">tests.homepage.TestIfHomePageHasMainComponents:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m54">tests.administration.TestIfAdministratorPageHasMainComponents:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m55">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m56">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m57">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m58">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m59">tests.administration.districts.TestDistrictCreation:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m60">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m61">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m62">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m63">tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m64">tests.votingResults.TestIfCandidateSearchIsAvailable:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m65">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m66">tests.homepage.TestIfHomePageHasMainComponents:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m67">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m68">tests.administration.districts.TestDistrictCreation:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m69">tests.administration.districts.TestDistrictAndCountyCreation:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m70">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m71">tests.administration.TestIfAdministratorPageHasMainComponents:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m72">tests.administration.TestIfAdministratorPageHasMainComponents:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m73">tests.administration.districts.TestDistrictCreation:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m74">tests.administration.districts.TestDistrictAndCountyCreation:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m75">tests.administration.districts.TestDistrictCreation:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m76">tests.homepage.TestIfHomePageHasMainComponents:prepareForTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m77">tests.administration.districts.TestDistrictCreation:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m78">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m79">tests.representative.TestIfRepresentativePageHasMainComponents:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m80">tests.administration.districts.TestDistrictCreation:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m81">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted:closeBrowser</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m82">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted:testIfDistrictCandidatesCanBeAddedToSpecificDistrict</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr>
+<tr class="param stripe"><td>testName</td>
+<td>testSurname</td>
+<td>38706092222</td>
+<td>testParty</td>
+<td>Ilgas ilgas kandidato aprasymas beveik kaip pasaka tik imk ir balsouk uz toki</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m83">tests.homepage.TestIfHomePageHasMainComponents:testIfCandidateSearchMenuElementAvailble</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m84">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted:removeTheDistrict</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m85">tests.administration.districts.TestDistrictAndCountyCreation:testIfDistrictAndCountyCanBeCreatedWithInvalidData</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>KaþkurLietuvoj</td>
+<td>qwerty</td>
+<td>9999</td>
+<td>senamiestis g.</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m86">tests.administration.TestIfAdministratorPageHasMainComponents:testIfDistrictsMenuElementIsAvailable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m87">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted:testIfDistrictCandidatesCanBeAddedToSpecificDistrict</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr>
+<tr class="param stripe"><td>1</td>
+<td>testingName</td>
+<td>testingSurname</td>
+<td>38706093333</td>
+<td>&quot;Ilgas ilgas kandidato aprasymas beveik kaip pasaka tik imk ir balsouk uz toki&quot;</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m88">tests.administration.TestIfAdministratorPageHasMainComponents:testIfDistrictCandidatesMenuElementIsAvailable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m89">tests.administration.districts.TestDistrictCreation:testIfSingleDistrictCanBeCreatedWithValidData</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>District contains Lithuanian symbols ðà</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m90">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted:testIfPartyCanBeCreatedWithNullParameters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m91">tests.administration.countyResults.TestCountyResultsPageIsAvailable:testIfMainElementsAreAvailable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m92">tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem:testIfSingleMandateVotingResultsCanBeUploaded</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>100</td>
+<td>200</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m93">tests.administration.districts.TestDistrictAndCountyCreation:testIfDistrictAndCountyCanBeCreatedWithInvalidData</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>TestDistrict</td>
+<td>someLatinWQX</td>
+<td>299999</td>
+<td>naujamiestis g.</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m94">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted:testIfRepresentativeCanNotBeCreatedWithNullParameters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m95">tests.administration.districts.TestDistrictCreation:testIfSingleDistrictCanBeCreatedWithInvalidData</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>District with latin symbol x</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m96">tests.administration.TestIfAdministratorPageHasMainComponents:testIfCountyRepresentativesMenuElementIsAvailable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m97">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted:testIfRepresentativeCanBeCreatedAndDeleted</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
+<tr class="param stripe"><td>Testperson</td>
+<td>Testsurname</td>
+<td>testing@test.itak</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m98">tests.votingResults.TestIfCandidateSearchIsAvailable:testIfMainCandidateSearchComponentsAreAvailable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m99">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted:testIfPartyCanBeDeletedFromTheDistrict</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m100">tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem:testIfMultiMandateVotingResultsCanBeUploaded</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>100</td>
+<td>200</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m101">tests.homepage.TestIfHomePageHasMainComponents:testIfSummarizedResultsMenuElementAvailble</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m102">tests.administration.districts.TestEditFunction:testIfSingleDistrictCanBeCreatedWithValidData</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr>
+<tr class="param stripe"><td>TestDistrict</td>
+<td>testCounty</td>
+<td>299</td>
+<td>naujamiestis g.</td>
+<td>Kaþkur</td>
+<td>Lietuvoj</td>
+<td>700</td>
+<td>senamiestis g.</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m103">tests.administration.districts.TestDistrictCreation:testIfSingleDistrictCanBeCreatedWithValidData</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Testing District</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m104">tests.administration.districts.TestDistrictCreation:testIfSingleDistrictCanBeCreatedWithInvalidData</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>More latin symbols qwz</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m105">tests.representative.TestIfRepresentativePageHasMainComponents:testIfMultisMandateVotingResultsWebpartIsAvailable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m106">tests.administration.TestIfAdministratorPageHasMainComponents:testIfCountyResultsMenuElementIsAvailable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m107">tests.homepage.TestIfHomePageHasMainComponents:testIfSingleMandateResultsMenuElementAvailble</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m108">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted:removeTheDistrict</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m109">tests.homepage.TestIfHomePageHasMainComponents:testIfMultiMandateResultsMenuElementAvailble</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m110">tests.administration.districts.TestDistrictAndCountyCreation:testIfDistrictAndCountyCanBeCreatedWithValidData</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>TestDistrict</td>
+<td>testerCounty</td>
+<td>2999</td>
+<td>Þirmûnø gatvë</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m111">tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem:testIfAdministratorCanRejectVotingResults</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m112">tests.representative.TestIfRepresentativePageHasMainComponents:testIfSingleMandateVotingResultsWebpartIsAvailable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m113">tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted:testIfCandidatesCanBeDeletedFromTheParty</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m114">tests.administration.districts.TestDistrictCreation:testIfSingleDistrictCanBeCreatedWithNullData</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m115">tests.administration.districts.TestDistrictAndCountyCreation:testIfDistrictAndCountyCanBeCreatedWithdNullData</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m116">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted:prepareTheDistrict</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m117">tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted:testIfCandidatsCanBeRemovedFromTheDistrict</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m118">tests.administration.TestIfAdministratorPageHasMainComponents:testIfPartiesMenuElementIsAvailable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m119">tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted:prepareTheDistrictAndCounty</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m120">tests.administration.districts.TestDistrictAndCountyCreation:testIfDistrictAndCountyCanBeCreatedWithValidData</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>KaþkurLietuvoj</td>
+<td>KaþkurVilniuj</td>
+<td>9999</td>
+<td>Antakalnio gatvë</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

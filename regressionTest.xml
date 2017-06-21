@@ -1,0 +1,18 @@
+<suite name = "RegressionTest - Suite">
+	<test name = "Test all main functionallities">
+		<classes>
+		<class name ="tests.homepage.TestIfHomePageHasMainComponents" />
+		<class name ="tests.administration.TestIfAdministratorPageHasMainComponents" />
+		<class name ="tests.votingResults.TestIfCandidateSearchIsAvailable" />	
+		<class name ="tests.administration.districts.TestDistrictCreation" />
+		<class name ="tests.administration.districts.TestDistrictAndCountyCreation" />
+		<class name ="tests.administration.districts.TestEditFunction" />
+		<class name ="tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted" />
+		<class name ="tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted" />
+		<class name ="tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted" />
+		<class name ="tests.administration.countyResults.TestCountyResultsPageIsAvailable" />	
+		<class name ="tests.representative.TestIfRepresentativePageHasMainComponents" />
+		<class name ="tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem" />			
+		</classes>	
+	</test>
+</suite>

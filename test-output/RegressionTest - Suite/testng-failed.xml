@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionTest - Suite]">
+  <test name="Test all main functionallities(failed)">
+    <classes>
+      <class name="tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted">
+        <methods>
+          <include name="testIfDistrictCandidatesCanBeAddedToSpecificDistrict"/>
+          <include name="testIfCandidatesCanBeDeletedFromTheParty"/>
+          <include name="testIfPartyCanBeDeletedFromTheDistrict"/>
+          <include name="testIfPartyCanBeCreatedWithNullParameters"/>
+        </methods>
+      </class> <!-- tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted -->
+      <class name="tests.votingResults.TestIfCandidateSearchIsAvailable">
+        <methods>
+          <include name="testIfMainCandidateSearchComponentsAreAvailable"/>
+        </methods>
+      </class> <!-- tests.votingResults.TestIfCandidateSearchIsAvailable -->
+      <class name="tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted">
+        <methods>
+          <include name="removeTheDistrict"/>
+          <include name="testIfRepresentativeCanNotBeCreatedWithNullParameters"/>
+          <include name="prepareTheDistrictAndCounty"/>
+          <include name="testIfRepresentativeCanBeCreatedAndDeleted"/>
+        </methods>
+      </class> <!-- tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted -->
+      <class name="tests.administration.countyResults.TestCountyResultsPageIsAvailable">
+        <methods>
+          <include name="testIfMainElementsAreAvailable"/>
+        </methods>
+      </class> <!-- tests.administration.countyResults.TestCountyResultsPageIsAvailable -->
+      <class name="tests.administration.TestIfAdministratorPageHasMainComponents">
+        <methods>
+          <include name="testIfCountyResultsMenuElementIsAvailable"/>
+          <include name="testIfDistrictsMenuElementIsAvailable"/>
+          <include name="testIfPartiesMenuElementIsAvailable"/>
+          <include name="testIfCountyRepresentativesMenuElementIsAvailable"/>
+          <include name="testIfDistrictCandidatesMenuElementIsAvailable"/>
+        </methods>
+      </class> <!-- tests.administration.TestIfAdministratorPageHasMainComponents -->
+      <class name="tests.homepage.TestIfHomePageHasMainComponents">
+        <methods>
+          <include name="testIfCandidateSearchMenuElementAvailble"/>
+          <include name="testIfMultiMandateResultsMenuElementAvailble"/>
+          <include name="testIfSingleMandateResultsMenuElementAvailble"/>
+          <include name="closeBrowser"/>
+          <include name="prepareForTest"/>
+          <include name="testIfLoginButtonAvailble"/>
+          <include name="testIfWebPageTitleHeaderIsAvailable"/>
+          <include name="testIfSummarizedResultsMenuElementAvailble"/>
+        </methods>
+      </class> <!-- tests.homepage.TestIfHomePageHasMainComponents -->
+      <class name="tests.administration.districts.TestDistrictAndCountyCreation">
+        <methods>
+          <include name="testIfDistrictAndCountyCanBeCreatedWithInvalidData"/>
+          <include name="testIfDistrictAndCountyCanBeCreatedWithdNullData"/>
+          <include name="testIfDistrictAndCountyCanBeCreatedWithValidData"/>
+        </methods>
+      </class> <!-- tests.administration.districts.TestDistrictAndCountyCreation -->
+      <class name="tests.administration.districts.TestDistrictCreation">
+        <methods>
+          <include name="testIfSingleDistrictCanBeCreatedWithValidData"/>
+          <include name="testIfSingleDistrictCanBeCreatedWithNullData"/>
+          <include name="testIfSingleDistrictCanBeCreatedWithInvalidData"/>
+        </methods>
+      </class> <!-- tests.administration.districts.TestDistrictCreation -->
+      <class name="tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem">
+        <methods>
+          <include name="testIfMultiMandateVotingResultsCanBeUploaded"/>
+          <include name="testIfAdministratorCanRejectVotingResults"/>
+          <include name="testIfSingleMandateVotingResultsCanBeUploaded"/>
+        </methods>
+      </class> <!-- tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem -->
+      <class name="tests.administration.districts.TestEditFunction">
+        <methods>
+          <include name="testIfSingleDistrictCanBeCreatedWithValidData"/>
+        </methods>
+      </class> <!-- tests.administration.districts.TestEditFunction -->
+      <class name="tests.representative.TestIfRepresentativePageHasMainComponents">
+        <methods>
+          <include name="testIfMultisMandateVotingResultsWebpartIsAvailable"/>
+          <include name="testIfSingleMandateVotingResultsWebpartIsAvailable"/>
+        </methods>
+      </class> <!-- tests.representative.TestIfRepresentativePageHasMainComponents -->
+      <class name="tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted">
+        <methods>
+          <include name="testIfCandidatsCanBeRemovedFromTheDistrict"/>
+          <include name="testIfDistrictCandidatesCanBeAddedToSpecificDistrict"/>
+          <include name="removeTheDistrict"/>
+          <include name="prepareTheDistrict"/>
+        </methods>
+      </class> <!-- tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted -->
+    </classes>
+  </test> <!-- Test all main functionallities(failed) -->
+</suite> <!-- Failed suite [RegressionTest - Suite] -->

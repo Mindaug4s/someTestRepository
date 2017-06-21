@@ -1,0 +1,1008 @@
+<html>
+<head>
+<title>TestNG:  Test all main functionallities</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test all main functionallities</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/39</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 21 21:27:31 EEST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>24 seconds (24914 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.homepage.TestIfHomePageHasMainComponents.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.homepage.TestIfHomePageHasMainComponents</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 75235d3b-757f-4f6c-b3eb-60c5619c49d2
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at tests.BaseTestPattern.closeBrowser(BaseTestPattern.java:32)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 29 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 44 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace208684473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace208684473'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 75235d3b-757f-4f6c-b3eb-60c5619c49d2
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at tests.BaseTestPattern.closeBrowser(BaseTestPattern.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 29 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 44 more
+</pre></div></td>
+<td>0</td>
+<td>tests.homepage.TestIfHomePageHasMainComponents@5622fdf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.homepage.TestIfHomePageHasMainComponents.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.homepage.TestIfHomePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.homepage.TestIfHomePageHasMainComponents@5622fdf</td></tr>
+<tr>
+<td title='tests.homepage.TestIfHomePageHasMainComponents.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.homepage.TestIfHomePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.homepage.TestIfHomePageHasMainComponents@5622fdf</td></tr>
+<tr>
+<td title='tests.homepage.TestIfHomePageHasMainComponents.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.homepage.TestIfHomePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.homepage.TestIfHomePageHasMainComponents@5622fdf</td></tr>
+<tr>
+<td title='tests.homepage.TestIfHomePageHasMainComponents.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.homepage.TestIfHomePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.homepage.TestIfHomePageHasMainComponents@5622fdf</td></tr>
+<tr>
+<td title='tests.administration.TestIfAdministratorPageHasMainComponents.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.TestIfAdministratorPageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.TestIfAdministratorPageHasMainComponents@4883b407</td></tr>
+<tr>
+<td title='tests.administration.TestIfAdministratorPageHasMainComponents.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.TestIfAdministratorPageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.TestIfAdministratorPageHasMainComponents@4883b407</td></tr>
+<tr>
+<td title='tests.administration.TestIfAdministratorPageHasMainComponents.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.TestIfAdministratorPageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.TestIfAdministratorPageHasMainComponents@4883b407</td></tr>
+<tr>
+<td title='tests.administration.TestIfAdministratorPageHasMainComponents.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.TestIfAdministratorPageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.TestIfAdministratorPageHasMainComponents@4883b407</td></tr>
+<tr>
+<td title='tests.administration.TestIfAdministratorPageHasMainComponents.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.TestIfAdministratorPageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.TestIfAdministratorPageHasMainComponents@4883b407</td></tr>
+<tr>
+<td title='tests.votingResults.TestIfCandidateSearchIsAvailable.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.votingResults.TestIfCandidateSearchIsAvailable</td>
+<td></td>
+<td>0</td>
+<td>tests.votingResults.TestIfCandidateSearchIsAvailable@6d4b1c02</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictCreation.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.districts.TestDistrictCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictCreation@39c0f4a</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictCreation.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.districts.TestDistrictCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictCreation@39c0f4a</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictCreation.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.districts.TestDistrictCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictCreation@39c0f4a</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictCreation.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.districts.TestDistrictCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictCreation@39c0f4a</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictCreation.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.districts.TestDistrictCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictCreation@39c0f4a</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictAndCountyCreation.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.districts.TestDistrictAndCountyCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictAndCountyCreation@1794d431</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictAndCountyCreation.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.districts.TestDistrictAndCountyCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictAndCountyCreation@1794d431</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictAndCountyCreation.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.districts.TestDistrictAndCountyCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictAndCountyCreation@1794d431</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictAndCountyCreation.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.districts.TestDistrictAndCountyCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictAndCountyCreation@1794d431</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictAndCountyCreation.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.districts.TestDistrictAndCountyCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictAndCountyCreation@1794d431</td></tr>
+<tr>
+<td title='tests.administration.districts.TestEditFunction.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.districts.TestEditFunction</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestEditFunction@57baeedf</td></tr>
+<tr>
+<td title='tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7</td></tr>
+<tr>
+<td title='tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7</td></tr>
+<tr>
+<td title='tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7</td></tr>
+<tr>
+<td title='tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7</td></tr>
+<tr>
+<td title='tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95</td></tr>
+<tr>
+<td title='tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95</td></tr>
+<tr>
+<td title='tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95</td></tr>
+<tr>
+<td title='tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95</td></tr>
+<tr>
+<td title='tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a</td></tr>
+<tr>
+<td title='tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a</td></tr>
+<tr>
+<td title='tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a</td></tr>
+<tr>
+<td title='tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a</td></tr>
+<tr>
+<td title='tests.administration.countyResults.TestCountyResultsPageIsAvailable.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.administration.countyResults.TestCountyResultsPageIsAvailable</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.countyResults.TestCountyResultsPageIsAvailable@7d9d1a19</td></tr>
+<tr>
+<td title='tests.representative.TestIfRepresentativePageHasMainComponents.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.representative.TestIfRepresentativePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.representative.TestIfRepresentativePageHasMainComponents@343f4d3d</td></tr>
+<tr>
+<td title='tests.representative.TestIfRepresentativePageHasMainComponents.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.representative.TestIfRepresentativePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.representative.TestIfRepresentativePageHasMainComponents@343f4d3d</td></tr>
+<tr>
+<td title='tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem</td>
+<td></td>
+<td>0</td>
+<td>tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948</td></tr>
+<tr>
+<td title='tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem</td>
+<td></td>
+<td>0</td>
+<td>tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948</td></tr>
+<tr>
+<td title='tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem.prepareForTest()'><b>prepareForTest</b><br>Test class: tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem</td>
+<td></td>
+<td>0</td>
+<td>tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948</td></tr>
+<tr>
+<td title='tests.homepage.TestIfHomePageHasMainComponents.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.homepage.TestIfHomePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.homepage.TestIfHomePageHasMainComponents@5622fdf</td></tr>
+<tr>
+<td title='tests.homepage.TestIfHomePageHasMainComponents.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.homepage.TestIfHomePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.homepage.TestIfHomePageHasMainComponents@5622fdf</td></tr>
+<tr>
+<td title='tests.homepage.TestIfHomePageHasMainComponents.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.homepage.TestIfHomePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.homepage.TestIfHomePageHasMainComponents@5622fdf</td></tr>
+<tr>
+<td title='tests.homepage.TestIfHomePageHasMainComponents.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.homepage.TestIfHomePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.homepage.TestIfHomePageHasMainComponents@5622fdf</td></tr>
+<tr>
+<td title='tests.administration.TestIfAdministratorPageHasMainComponents.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.TestIfAdministratorPageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.TestIfAdministratorPageHasMainComponents@4883b407</td></tr>
+<tr>
+<td title='tests.administration.TestIfAdministratorPageHasMainComponents.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.TestIfAdministratorPageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.TestIfAdministratorPageHasMainComponents@4883b407</td></tr>
+<tr>
+<td title='tests.administration.TestIfAdministratorPageHasMainComponents.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.TestIfAdministratorPageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.TestIfAdministratorPageHasMainComponents@4883b407</td></tr>
+<tr>
+<td title='tests.administration.TestIfAdministratorPageHasMainComponents.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.TestIfAdministratorPageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.TestIfAdministratorPageHasMainComponents@4883b407</td></tr>
+<tr>
+<td title='tests.administration.TestIfAdministratorPageHasMainComponents.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.TestIfAdministratorPageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.TestIfAdministratorPageHasMainComponents@4883b407</td></tr>
+<tr>
+<td title='tests.votingResults.TestIfCandidateSearchIsAvailable.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.votingResults.TestIfCandidateSearchIsAvailable</td>
+<td></td>
+<td>0</td>
+<td>tests.votingResults.TestIfCandidateSearchIsAvailable@6d4b1c02</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictCreation.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.districts.TestDistrictCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictCreation@39c0f4a</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictCreation.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.districts.TestDistrictCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictCreation@39c0f4a</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictCreation.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.districts.TestDistrictCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictCreation@39c0f4a</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictCreation.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.districts.TestDistrictCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictCreation@39c0f4a</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictCreation.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.districts.TestDistrictCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictCreation@39c0f4a</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictAndCountyCreation.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.districts.TestDistrictAndCountyCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictAndCountyCreation@1794d431</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictAndCountyCreation.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.districts.TestDistrictAndCountyCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictAndCountyCreation@1794d431</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictAndCountyCreation.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.districts.TestDistrictAndCountyCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictAndCountyCreation@1794d431</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictAndCountyCreation.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.districts.TestDistrictAndCountyCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictAndCountyCreation@1794d431</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictAndCountyCreation.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.districts.TestDistrictAndCountyCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictAndCountyCreation@1794d431</td></tr>
+<tr>
+<td title='tests.administration.districts.TestEditFunction.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.districts.TestEditFunction</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestEditFunction@57baeedf</td></tr>
+<tr>
+<td title='tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7</td></tr>
+<tr>
+<td title='tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7</td></tr>
+<tr>
+<td title='tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7</td></tr>
+<tr>
+<td title='tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7</td></tr>
+<tr>
+<td title='tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95</td></tr>
+<tr>
+<td title='tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95</td></tr>
+<tr>
+<td title='tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95</td></tr>
+<tr>
+<td title='tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95</td></tr>
+<tr>
+<td title='tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a</td></tr>
+<tr>
+<td title='tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a</td></tr>
+<tr>
+<td title='tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a</td></tr>
+<tr>
+<td title='tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a</td></tr>
+<tr>
+<td title='tests.administration.countyResults.TestCountyResultsPageIsAvailable.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.administration.countyResults.TestCountyResultsPageIsAvailable</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.countyResults.TestCountyResultsPageIsAvailable@7d9d1a19</td></tr>
+<tr>
+<td title='tests.representative.TestIfRepresentativePageHasMainComponents.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.representative.TestIfRepresentativePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.representative.TestIfRepresentativePageHasMainComponents@343f4d3d</td></tr>
+<tr>
+<td title='tests.representative.TestIfRepresentativePageHasMainComponents.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.representative.TestIfRepresentativePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.representative.TestIfRepresentativePageHasMainComponents@343f4d3d</td></tr>
+<tr>
+<td title='tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem</td>
+<td></td>
+<td>0</td>
+<td>tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948</td></tr>
+<tr>
+<td title='tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem</td>
+<td></td>
+<td>0</td>
+<td>tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948</td></tr>
+<tr>
+<td title='tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem.closeBrowser()'><b>closeBrowser</b><br>Test class: tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem</td>
+<td></td>
+<td>0</td>
+<td>tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.homepage.TestIfHomePageHasMainComponents.testIfLoginButtonAvailble()'><b>testIfLoginButtonAvailble</b><br>Test class: tests.homepage.TestIfHomePageHasMainComponents</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 75235d3b-757f-4f6c-b3eb-60c5619c49d2
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at tests.homepage.TestIfHomePageHasMainComponents.testIfLoginButtonAvailble(TestIfHomePageHasMainComponents.java:28)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:162)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 32 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 47 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1713833639", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1713833639'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 75235d3b-757f-4f6c-b3eb-60c5619c49d2
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at tests.homepage.TestIfHomePageHasMainComponents.testIfLoginButtonAvailble(TestIfHomePageHasMainComponents.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:162)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 32 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 47 more
+</pre></div></td>
+<td>6</td>
+<td>tests.homepage.TestIfHomePageHasMainComponents@5622fdf</td></tr>
+<tr>
+<td title='tests.homepage.TestIfHomePageHasMainComponents.testIfWebPageTitleHeaderIsAvailable()'><b>testIfWebPageTitleHeaderIsAvailable</b><br>Test class: tests.homepage.TestIfHomePageHasMainComponents</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;website-page-title&quot;}
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d289ae25-348d-454a-88c4-bd68e3c355b9
+*** Element info: {Using=id, value=website-page-title}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at tests.homepage.TestIfHomePageHasMainComponents.testIfWebPageTitleHeaderIsAvailable(TestIfHomePageHasMainComponents.java:18)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;website-page-title&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/MINDAU~1/AppData/Local/Temp/anonymous1753031544479347351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/MINDAU~1/AppData/Local/Temp/anonymous1753031544479347351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace193178046", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace193178046'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;website-page-title&quot;}
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d289ae25-348d-454a-88c4-bd68e3c355b9
+*** Element info: {Using=id, value=website-page-title}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at tests.homepage.TestIfHomePageHasMainComponents.testIfWebPageTitleHeaderIsAvailable(TestIfHomePageHasMainComponents.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;website-page-title&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Mindaug4s-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/MINDAU~1/AppData/Local/Temp/anonymous1753031544479347351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/MINDAU~1/AppData/Local/Temp/anonymous1753031544479347351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>12</td>
+<td>tests.homepage.TestIfHomePageHasMainComponents@5622fdf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted.prepareTheDistrict()'><b>prepareTheDistrict</b><br>Test class: tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7</td></tr>
+<tr>
+<td title='tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted.prepareTheDistrictAndCounty()'><b>prepareTheDistrictAndCounty</b><br>Test class: tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95</td></tr>
+<tr>
+<td title='tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted.removeTheDistrict()'><b>removeTheDistrict</b><br>Test class: tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7</td></tr>
+<tr>
+<td title='tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted.removeTheDistrict()'><b>removeTheDistrict</b><br>Test class: tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95</td></tr>
+<tr>
+<td title='tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem.testIfAdministratorCanRejectVotingResults()'><b>testIfAdministratorCanRejectVotingResults</b><br>Test class: tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem</td>
+<td></td>
+<td>0</td>
+<td>tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948</td></tr>
+<tr>
+<td title='tests.homepage.TestIfHomePageHasMainComponents.testIfCandidateSearchMenuElementAvailble()'><b>testIfCandidateSearchMenuElementAvailble</b><br>Test class: tests.homepage.TestIfHomePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.homepage.TestIfHomePageHasMainComponents@5622fdf</td></tr>
+<tr>
+<td title='tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted.testIfCandidatesCanBeDeletedFromTheParty()'><b>testIfCandidatesCanBeDeletedFromTheParty</b><br>Test class: tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a</td></tr>
+<tr>
+<td title='tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted.testIfCandidatsCanBeRemovedFromTheDistrict()'><b>testIfCandidatsCanBeRemovedFromTheDistrict</b><br>Test class: tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7</td></tr>
+<tr>
+<td title='tests.administration.TestIfAdministratorPageHasMainComponents.testIfCountyRepresentativesMenuElementIsAvailable()'><b>testIfCountyRepresentativesMenuElementIsAvailable</b><br>Test class: tests.administration.TestIfAdministratorPageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.TestIfAdministratorPageHasMainComponents@4883b407</td></tr>
+<tr>
+<td title='tests.administration.TestIfAdministratorPageHasMainComponents.testIfCountyResultsMenuElementIsAvailable()'><b>testIfCountyResultsMenuElementIsAvailable</b><br>Test class: tests.administration.TestIfAdministratorPageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.TestIfAdministratorPageHasMainComponents@4883b407</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictAndCountyCreation.testIfDistrictAndCountyCanBeCreatedWithInvalidData()'><b>testIfDistrictAndCountyCanBeCreatedWithInvalidData</b><br>Test class: tests.administration.districts.TestDistrictAndCountyCreation<br>Parameters: TestDistrict, someLatinWQX, 299999, naujamiestis g.</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictAndCountyCreation@1794d431</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictAndCountyCreation.testIfDistrictAndCountyCanBeCreatedWithInvalidData()'><b>testIfDistrictAndCountyCanBeCreatedWithInvalidData</b><br>Test class: tests.administration.districts.TestDistrictAndCountyCreation<br>Parameters: KaþkurLietuvoj, qwerty, 9999, senamiestis g.</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictAndCountyCreation@1794d431</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictAndCountyCreation.testIfDistrictAndCountyCanBeCreatedWithValidData()'><b>testIfDistrictAndCountyCanBeCreatedWithValidData</b><br>Test class: tests.administration.districts.TestDistrictAndCountyCreation<br>Parameters: TestDistrict, testerCounty, 2999, Þirmûnø gatvë</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictAndCountyCreation@1794d431</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictAndCountyCreation.testIfDistrictAndCountyCanBeCreatedWithValidData()'><b>testIfDistrictAndCountyCanBeCreatedWithValidData</b><br>Test class: tests.administration.districts.TestDistrictAndCountyCreation<br>Parameters: KaþkurLietuvoj, KaþkurVilniuj, 9999, Antakalnio gatvë</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictAndCountyCreation@1794d431</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictAndCountyCreation.testIfDistrictAndCountyCanBeCreatedWithdNullData()'><b>testIfDistrictAndCountyCanBeCreatedWithdNullData</b><br>Test class: tests.administration.districts.TestDistrictAndCountyCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictAndCountyCreation@1794d431</td></tr>
+<tr>
+<td title='tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted.testIfDistrictCandidatesCanBeAddedToSpecificDistrict()'><b>testIfDistrictCandidatesCanBeAddedToSpecificDistrict</b><br>Test class: tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted<br>Parameters: testName, testSurname, 38706092222, testParty, Ilgas ilgas kandidato aprasymas beveik kaip pasaka tik imk ir balsouk uz toki</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districtCandidates.TestIfCandidatesCanBeAddedAndDeleted@53b32d7</td></tr>
+<tr>
+<td title='tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted.testIfDistrictCandidatesCanBeAddedToSpecificDistrict()'><b>testIfDistrictCandidatesCanBeAddedToSpecificDistrict</b><br>Test class: tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted<br>Parameters: 1, testingName, testingSurname, 38706093333, "Ilgas ilgas kandidato aprasymas beveik kaip pasaka tik imk ir balsouk uz toki"</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a</td></tr>
+<tr>
+<td title='tests.administration.TestIfAdministratorPageHasMainComponents.testIfDistrictCandidatesMenuElementIsAvailable()'><b>testIfDistrictCandidatesMenuElementIsAvailable</b><br>Test class: tests.administration.TestIfAdministratorPageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.TestIfAdministratorPageHasMainComponents@4883b407</td></tr>
+<tr>
+<td title='tests.administration.TestIfAdministratorPageHasMainComponents.testIfDistrictsMenuElementIsAvailable()'><b>testIfDistrictsMenuElementIsAvailable</b><br>Test class: tests.administration.TestIfAdministratorPageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.TestIfAdministratorPageHasMainComponents@4883b407</td></tr>
+<tr>
+<td title='tests.votingResults.TestIfCandidateSearchIsAvailable.testIfMainCandidateSearchComponentsAreAvailable()'><b>testIfMainCandidateSearchComponentsAreAvailable</b><br>Test class: tests.votingResults.TestIfCandidateSearchIsAvailable</td>
+<td></td>
+<td>0</td>
+<td>tests.votingResults.TestIfCandidateSearchIsAvailable@6d4b1c02</td></tr>
+<tr>
+<td title='tests.administration.countyResults.TestCountyResultsPageIsAvailable.testIfMainElementsAreAvailable()'><b>testIfMainElementsAreAvailable</b><br>Test class: tests.administration.countyResults.TestCountyResultsPageIsAvailable</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.countyResults.TestCountyResultsPageIsAvailable@7d9d1a19</td></tr>
+<tr>
+<td title='tests.homepage.TestIfHomePageHasMainComponents.testIfMultiMandateResultsMenuElementAvailble()'><b>testIfMultiMandateResultsMenuElementAvailble</b><br>Test class: tests.homepage.TestIfHomePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.homepage.TestIfHomePageHasMainComponents@5622fdf</td></tr>
+<tr>
+<td title='tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem.testIfMultiMandateVotingResultsCanBeUploaded()'><b>testIfMultiMandateVotingResultsCanBeUploaded</b><br>Test class: tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem<br>Parameters: 100, 200</td>
+<td></td>
+<td>0</td>
+<td>tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948</td></tr>
+<tr>
+<td title='tests.representative.TestIfRepresentativePageHasMainComponents.testIfMultisMandateVotingResultsWebpartIsAvailable()'><b>testIfMultisMandateVotingResultsWebpartIsAvailable</b><br>Test class: tests.representative.TestIfRepresentativePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.representative.TestIfRepresentativePageHasMainComponents@343f4d3d</td></tr>
+<tr>
+<td title='tests.administration.TestIfAdministratorPageHasMainComponents.testIfPartiesMenuElementIsAvailable()'><b>testIfPartiesMenuElementIsAvailable</b><br>Test class: tests.administration.TestIfAdministratorPageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.TestIfAdministratorPageHasMainComponents@4883b407</td></tr>
+<tr>
+<td title='tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted.testIfPartyCanBeCreatedWithNullParameters()'><b>testIfPartyCanBeCreatedWithNullParameters</b><br>Test class: tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a</td></tr>
+<tr>
+<td title='tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted.testIfPartyCanBeDeletedFromTheDistrict()'><b>testIfPartyCanBeDeletedFromTheDistrict</b><br>Test class: tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted@3e6fa38a</td></tr>
+<tr>
+<td title='tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted.testIfRepresentativeCanBeCreatedAndDeleted()'><b>testIfRepresentativeCanBeCreatedAndDeleted</b><br>Test class: tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted<br>Parameters: Testperson, Testsurname, testing@test.itak</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95</td></tr>
+<tr>
+<td title='tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted.testIfRepresentativeCanNotBeCreatedWithNullParameters()'><b>testIfRepresentativeCanNotBeCreatedWithNullParameters</b><br>Test class: tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.countyRepresentatives.TestIfCountyRepresentativeCanBeCreatedAndDeleted@6093dd95</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictCreation.testIfSingleDistrictCanBeCreatedWithInvalidData()'><b>testIfSingleDistrictCanBeCreatedWithInvalidData</b><br>Test class: tests.administration.districts.TestDistrictCreation<br>Parameters: District with latin symbol x</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictCreation@39c0f4a</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictCreation.testIfSingleDistrictCanBeCreatedWithInvalidData()'><b>testIfSingleDistrictCanBeCreatedWithInvalidData</b><br>Test class: tests.administration.districts.TestDistrictCreation<br>Parameters: More latin symbols qwz</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictCreation@39c0f4a</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictCreation.testIfSingleDistrictCanBeCreatedWithNullData()'><b>testIfSingleDistrictCanBeCreatedWithNullData</b><br>Test class: tests.administration.districts.TestDistrictCreation</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictCreation@39c0f4a</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictCreation.testIfSingleDistrictCanBeCreatedWithValidData()'><b>testIfSingleDistrictCanBeCreatedWithValidData</b><br>Test class: tests.administration.districts.TestDistrictCreation<br>Parameters: Testing District</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictCreation@39c0f4a</td></tr>
+<tr>
+<td title='tests.administration.districts.TestDistrictCreation.testIfSingleDistrictCanBeCreatedWithValidData()'><b>testIfSingleDistrictCanBeCreatedWithValidData</b><br>Test class: tests.administration.districts.TestDistrictCreation<br>Parameters: District contains Lithuanian symbols ðà</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestDistrictCreation@39c0f4a</td></tr>
+<tr>
+<td title='tests.administration.districts.TestEditFunction.testIfSingleDistrictCanBeCreatedWithValidData()'><b>testIfSingleDistrictCanBeCreatedWithValidData</b><br>Test class: tests.administration.districts.TestEditFunction<br>Parameters: TestDistrict, testCounty, 299, naujamiestis g., Kaþkur, Lietuvoj, 700, senamiestis g.</td>
+<td></td>
+<td>0</td>
+<td>tests.administration.districts.TestEditFunction@57baeedf</td></tr>
+<tr>
+<td title='tests.homepage.TestIfHomePageHasMainComponents.testIfSingleMandateResultsMenuElementAvailble()'><b>testIfSingleMandateResultsMenuElementAvailble</b><br>Test class: tests.homepage.TestIfHomePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.homepage.TestIfHomePageHasMainComponents@5622fdf</td></tr>
+<tr>
+<td title='tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem.testIfSingleMandateVotingResultsCanBeUploaded()'><b>testIfSingleMandateVotingResultsCanBeUploaded</b><br>Test class: tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem<br>Parameters: 100, 200</td>
+<td></td>
+<td>0</td>
+<td>tests.representative.TestIfRepresentativeCanUploadResultsAndAdminRejectThem@42e26948</td></tr>
+<tr>
+<td title='tests.representative.TestIfRepresentativePageHasMainComponents.testIfSingleMandateVotingResultsWebpartIsAvailable()'><b>testIfSingleMandateVotingResultsWebpartIsAvailable</b><br>Test class: tests.representative.TestIfRepresentativePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.representative.TestIfRepresentativePageHasMainComponents@343f4d3d</td></tr>
+<tr>
+<td title='tests.homepage.TestIfHomePageHasMainComponents.testIfSummarizedResultsMenuElementAvailble()'><b>testIfSummarizedResultsMenuElementAvailble</b><br>Test class: tests.homepage.TestIfHomePageHasMainComponents</td>
+<td></td>
+<td>0</td>
+<td>tests.homepage.TestIfHomePageHasMainComponents@5622fdf</td></tr>
+</table><p>
+</body>
+</html>

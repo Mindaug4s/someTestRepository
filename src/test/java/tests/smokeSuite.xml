@@ -1,0 +1,9 @@
+<suite name = "SmokeTest - Suite">
+	<test name = "Test main functionallity">
+		<classes>
+		<class name ="tests.homepage.TestIfHomePageHasMainComponents" />
+		<class name ="tests.administration.TestIfAdministratorPageHasMainComponents" />
+		<class name ="tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted" />		
+		</classes>	
+	</test>
+</suite>

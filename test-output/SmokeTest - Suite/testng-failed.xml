@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SmokeTest - Suite]">
+  <test name="Test main functionallity(failed)">
+    <classes>
+      <class name="tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted">
+        <methods>
+          <include name="testIfDistrictCandidatesCanBeAddedToSpecificDistrict" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="testIfCandidatesCanBeDeletedFromTheParty"/>
+          <include name="testIfPartyCanBeDeletedFromTheDistrict"/>
+          <include name="prepareForTest"/>
+          <include name="testIfPartyCanBeCreatedWithNullParameters"/>
+        </methods>
+      </class> <!-- tests.administration.parties.TestIfCandidatesCanBeUploadedToPartyAndDeleted -->
+      <class name="tests.administration.TestIfAdministratorPageHasMainComponents">
+        <methods>
+          <include name="testIfCountyResultsMenuElementIsAvailable"/>
+          <include name="testIfDistrictsMenuElementIsAvailable"/>
+          <include name="testIfPartiesMenuElementIsAvailable"/>
+          <include name="testIfCountyRepresentativesMenuElementIsAvailable"/>
+          <include name="testIfDistrictCandidatesMenuElementIsAvailable"/>
+          <include name="closeBrowser"/>
+          <include name="prepareForTest"/>
+        </methods>
+      </class> <!-- tests.administration.TestIfAdministratorPageHasMainComponents -->
+      <class name="tests.homepage.TestIfHomePageHasMainComponents">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="prepareForTest"/>
+        </methods>
+      </class> <!-- tests.homepage.TestIfHomePageHasMainComponents -->
+    </classes>
+  </test> <!-- Test main functionallity(failed) -->
+</suite> <!-- Failed suite [SmokeTest - Suite] -->
